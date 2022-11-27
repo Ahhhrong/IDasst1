@@ -1,38 +1,53 @@
 function myFunction() {
     // Get the value of the input field with id="numb"
-    var a = document.getElementById("name").value;
-    var b = document.getElementById("number").value;
-    var c = document.getElementById("email").value;
-    var d = document.getElementById("sms").value;
+    let a = document.getElementById("name").value;
+    let b = document.getElementById("number").value;
+    let c = document.getElementById("email").value;
+    let d = document.getElementById("sms").value;
 
     // If x is Not a Number or less than one or greater than 10
-    var text1 ="";
-    var text2="";
-    var text3="";
-    var text4="";
-    if (a.length==0) {
-        text1= "Input not valid";
+    let text1;
+    let text2;
+    let text3;
+    let text4;
+    if (a.length==0) 
+    {
+        text1= "Please Enter Your Name";
 
     }
     else
     {
-        document.getElementById("pname").innerHTML =" ";
+        text1 =" "
     }
-    if (b.length==0) 
+    if (b.length!=8) 
     {
-        text2= "Input not valid";
+        text2= "Please Enter Valid Phone Number ";
+
     }
-    if (c.length==0) 
+    else
     {
-        text1= "Input not valid";
-    }
-    if (d.length==0) 
+        text2 =" "
+    } if (c.length==0) 
     {
-        text1= "Input not valid";
+        text3= "Please Enter Email";
+
     }
-    document.getElementById("pname").innerHTML = text1;
-    document.getElementById("pnumber").innerHTML = text1;
-    document.getElementById("pemail").innerHTML = text1;
-    document.getElementById("psms").innerHTML = text1;
+    else
+    {
+        text3 =" "
+    } if (d.length==0) 
+    {
+        text4= "Please Enter Ur Message";
+
+    }
+    else
+    {
+        text4 =" "
+    }
+    document.getElementById("pname").innerHTML =text1;
+    document.getElementById("pnumber").innerHTML =text2;
+    document.getElementById("pemail").innerHTML =text3;
+    document.getElementById("psms").innerHTML =text4;
+    
 
 }
