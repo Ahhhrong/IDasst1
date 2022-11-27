@@ -1,0 +1,47 @@
+body{
+    background-color: white;
+}
+
+.lin {
+    background-color: transparent;
+    overflow: hidden;
+  }
+  
+
+.lin a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .lin a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  HTML CSS JS Result Skip Results Iframe
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  }
+
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+
+
