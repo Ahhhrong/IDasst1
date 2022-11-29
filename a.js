@@ -53,9 +53,35 @@ function myFunction() {
 }
 function burger() {
     var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
+    if (x.style.display === "block") 
+    {
       x.style.display = "none";
-    } else {
+    } else 
+    {
       x.style.display = "block";
     }
   }
+
+
+function ChkList(chk) {
+var chkList = chk.parentNode.parentNode.parentNode;
+var chks = chkList.getElementsByTagName("input");
+for (var i = 0; i < chks.length; i++) 
+
+    if (chks[i] != chk && chk.checked) 
+    {
+        chks[i].checked = false;
+    }
+}
+function Validate() {
+    var radio = rb.getElementsByTagName("input");
+    var isChecked = false;
+    for (var i = 0; i < radio.length; i++) {
+        if (radio[i].checked) {
+            isChecked = true;
+            break;
+        }
+    }
+
+    return isChecked;
+}
