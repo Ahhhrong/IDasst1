@@ -68,10 +68,16 @@
   
   <table class="content__wrap">
     <td >
-     
+     <script type="text/javascript">
+      function addtocart(){
+        localStorage.setItem("product1",document.getElementById("product1").innerHTML)
+        localStorage.setItem("price1",document.getElementById("price1").innerHTML)
+
+      }
+     </script>
       <div class="card" >
         <img src="product1.jpg" alt="Denim Jeans" style="width:100%">
-            <h1 style="font-size: medium;" id="name1">10 Year Anniversary Tee</h1>
+            <h1 style="font-size: medium;" id="product1">10 Year Anniversary Tee</h1>
             <p class="price" id="price1" >$39</p>
             <p>Free sizing</p>
             <br>
@@ -88,7 +94,7 @@
             <br>
             <br>
             <br>
-            <p><button><a style="color: white;text-decoration: none; " id="button2"  href="" >Add to Cart</a></button></p>
+            <p><a href="checkout.html"><button type="button" style="color: white;text-decoration: none; " id="button1"   onclick="addtocart()" >Add to Cart</button></a></p>
           </div>
     </td>
     <td>
@@ -100,7 +106,7 @@
             <br>
             <br>
             <br>
-            <p><button><a style="color: white;text-decoration: none; " id="button1"  href="checkout.html" >Add to Cart</a></button></p>
+            <p><a href="checkout.html"><button type="button" style="color: white;text-decoration: none; " id="button1"   >Add to Cart</button></a></p>
           </div>
           
     </td>

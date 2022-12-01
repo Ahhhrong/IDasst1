@@ -24,6 +24,7 @@
     <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-851C9SJSJN&amp;l=dataLayer&amp;cx=c"></script>
     <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
     <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WVCBJFS"></script>
+   
 </head>
 <header>
     <div class="lin" style="background-color: black;">
@@ -64,7 +65,15 @@
             <td style="width: 200px;">Total Price</td>
         </tr>
         <tr >
-            
+            <script type="text/javascript">
+                window.onload=function(){what()}
+                function what(){
+                document.getElementById("pproduct").innerHTML=localStorage.getItem("product1")
+                document.getElementById("pprice").innerHTML=localStorage.getItem("price1")
+
+                }
+            </script>
+            <p id="demo"></p>
             <td style="width: 100px;"></td>
             <td style="width: 200px;" ><span id="pproduct"></span></td>
             <td style="width: 200px;" id="pquantity"></td>
@@ -180,10 +189,7 @@
         </style>
         </head>
         <body>
-        
-        <h2>Responsive Checkout Form</h2>
-        <p>Resize the browser window to see the effect. When the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other.</p>
-        <div class="row">
+     <div class="row">
           <div class="col-75">
             <div class="container">
               <form action="/action_page.php">
