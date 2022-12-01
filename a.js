@@ -85,3 +85,10 @@ function Validate() {
 
     return isChecked;
 }
+// function addtocart()
+// {
+//     var pageContent = document.getElementById("name1").innerHTML; 
+//     sessionStorage.setItem("name1", pageContent);
+//     document.getElementById("pproduct").innerHTML=sessionStorage.getItem("name1");
+
+// }

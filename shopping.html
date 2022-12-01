@@ -1,313 +1,138 @@
-<body>
-    <form method="post" action="./sizes" id="ctl01">
-<div class="aspNetHidden">
-<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
-<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="Lpha8B8adunwYuCTbr2ci2jh8Qp7aQO9rl70LeGJv0TmVKVy+jrxRpUCfNta+AsYGiI8rUzkTLft4tuv2C5jASv8nU7J7D948faHd5HyK1T84LA9N39+KbAu0Ylmfkgs/bhgstjjVkNyerT/0W2NIjSK1qmhHOvFFWR1wB5hiQxObP0VftiU8Z3G+TLhXq/BMJxCtmiYXMvvt1FQQjCNvVrOAJ1GnCpdkqhIlc5BqUU3nYRBQPd0FaX6aTEz5D7giRs1OT6PO5pcEJNk1I/QTmkZrDCmN9im6L1xlny03puP3eYrSUwLQETEy+OUh3mkoAGs0QmoEoEh8eeBOydO83lOUDdpaoj/w9P5+zQVoAyb4xVgdKnqgBGZCDkH9rssxYKNpp5OWccrudiUBEcMdhjePRsOQbLtxZLqU0VMDcQ=">
-</div>
-
-<script type="text/javascript">
-//<![CDATA[
-var theForm = document.forms['ctl01'];
-if (!theForm) {
-    theForm = document.ctl01;
-}
-function __doPostBack(eventTarget, eventArgument) {
-    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-        theForm.__EVENTTARGET.value = eventTarget;
-        theForm.__EVENTARGUMENT.value = eventArgument;
-        theForm.submit();
-    }
-}
-//]]>
-</script>
-
-
-
-<script src="/bundles/MsAjaxJs?v=D6VN0fHlwFSIWjbVzi6mZyE9Ls-4LNrSSYVGRU46XF81" type="text/javascript"></script>
-<script type="text/javascript">
-//<![CDATA[
-if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
-//]]>
-</script>
-
-<script src="../Scripts/jquery-3.3.1.js" type="text/javascript"></script>
-<script src="../Scripts/bootstrap.js" type="text/javascript"></script>
-<script src="/bundles/WebFormsJs?v=N8tymL9KraMLGAMFuPycfH3pXe6uUlRXdhtYv8A_jUU1" type="text/javascript"></script>
-<div class="aspNetHidden">
-
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="53F41811">
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="qaTocCZXTG80YKUTXq47sEfXo91YwJzbdKrxpVAuSxX6tU2/ivTHQM/jm9BQPwAWeggsgeFMIUWP2ujsw0rcHm1Hxo7xt2EiWBHgn3LMwNdcUuAdcxxF4D/iBNjRjhl60jB5FUCdblli1+NdI2np7gkc10Y90jY28+2sx2Pc7WcqmN1ae7yMMYIsVA9dTSC3hyHCa43pKLmLEI5LCJq6JxrL8GvK1vpxP7s1iHISHEjd/Zus0r1X7/RJ5JitZujETtYNY0/jtaB/9HHMzYKyP6FbRx90S2aNozRewyz+NuFhXw8SRSAB4SCfRtYgW2FM9t+fF1qYg+j7rFSAQIz1r4HEBnEYgzdJ1H+hkHW39jQD+Gm4f7ryXT4CpXf/UB7Nf81hgcM/CDj+hLRNgvCPrcoHAhBHE7+3cjSQHOM33g4DlNKGt6hQIAB0jHKXSmOh4gdyE4mefTY2lIfpl7D66oSPcZtmibNBBA8o96jJV2jGM+FyRY/HDWF57+fl1PA+Dd2yQLZ2WXLPTe/WV0JnBqEp7yCkomHFuPLWUIBajJ1q/ahdcDvyyalhgWFunseFJqDQBEGQkMr7Kcv1jREWC2n+Gjgye7rHQaC66lEsS+LmLiCD71rIKue0EomTB+4SOXSQnxvH1Ee87XcmWr5EYYKcIJtjzVD8fKrV/NwJsghKQpE8VF5zs8ZBsV0OMfrjU626GQnhg2Hs/lG7PG3BUK8LNgjyeop/YS1Ix43AOjDtQBIWGAM2rf5pajcF6gJQPoTRlXohq6InpnZ5GBx6JmTi4xf6+GSKJtBi0ht3e9ODmXXje3JCPIqyCuWsduYCMJsOOA339goIAodypFVvnunFycqqVisVD8TnDacMSs0zwJwwJ3QTLIOMoZVKX/yfyGw90IxCPSsw3FaNmwqBtVbMLQa2uZUNGRWi2VimxbNEntkNz6o6IUeY7p7RZ7qKFqZrgLFykl2RipTmRrlH4lVKzHQHNVkLd0gMknrapcAJkjLKMoEUcJEm9jnlEiSl8jBJeJ6bl1JzSYs0NyF94kElcM20qJdO47ZpyU88HQkhIMsLCveGvFlYfakIzRgByOKeG1XMz9Fg0byAKuxrOLlhV3cQSEFJlWvl6+muhV6mc1UhARnmSbOjrrOEtDo/IT4J/bonFBlBFQ0zGyzucytMbMOPPDcB3x8FME9TpUK9QT/08PvC6NvhjPBNEzmdnymEWsfOIbnPMjhnk9mCCW6l57lEcbDIYp4Zhx2AsW7sSuQmKugKEQhDYT5E8gSxA4hX0LzprYSEQR6XjCq43vzx/Vs2e5u1kfzBeMgucOl5aP5H7J8CI6FAPZ/SWZLtqJVWMPrgzSTOkfm/4B7XVyvfNDkUyDTdKBkdSTZ3uSPXZDOurcMRi9EAifOSOgwDlzoTPb3bHYXJbWD15i+ZiuYhFBzhYbGOP8DItusXjgcZp2E77IZMPSQPlQgkRfkpKKOLxoUxu2oZsnRkh1wnIyAX+dyPWpkk1Jg+7O0tYhrUaF8n2iXV3FWd3AYi5cwlTUElQK6OQYnAHFhbyZHGJogOgdOURQ9QySMh/dQtLvndDAQSBfh9pyWOJtoJV/vw">
-</div>
-        <script type="text/javascript">
-//<![CDATA[
-Sys.WebForms.PageRequestManager._initialize('ctl00$ctl08', 'ctl01', [], [], [], 90, 'ctl00');
-//]]>
-</script>
-
-
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <img id="Image3" src="../Image/Wolf.png" style="height:66px;width:90px;">
-                <span class="auto-style3" style="font-size: x-large; color: lightpink"><strong>Wolf Kicks</strong></span><div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="Home.aspx">Home</a></li>
-                        <li><a href="Order.aspx">Product Description</a></li>
-                        <li><a href="sizes.aspx">Shopping</a></li>
-                        <li><a href="Contact.aspx">Contact me</a></li>
-                       
-                        <li><a href="purchase.aspx">Checkout</a></li>                      
-                    </ul>
-                    
-                            <ul class="nav navbar-nav navbar-right">
-                                     <li><a href="../Account/Register.aspx">Register</a></li>
-                                <li><a href="../Account/Login.aspx">Log in</a></li>
-                                </ul>
-                                <li><a href="../Account/Manage.aspx" title="Manage your account">Hello, zirong!</a></li>
-                                <li>
-                                    <a href="javascript:__doPostBack('ctl00$ctl14$ctl04$ctl00','')">Log Out</a>
-                                </li>
-                            
-                        
-                </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Normalize.css">
+    <link rel="stylesheet" href="_top.scss">
+    <script src="slick.min.js"></script>
+    <title>jjlin</title>
+    <script src="a.js"></script>
+    <style class="vjs-styles-defaults">
+        .video-js {
+          width: 300px;
+          height: 150px;
+        }
+  
+        .vjs-fluid {
+          padding-top: 56.25%
+        }
+      </style>
+    <link rel="stylesheet" href="https://start.sanctuarytech.co/dist/js/element-ui.css">
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-851C9SJSJN&amp;l=dataLayer&amp;cx=c"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WVCBJFS"></script>
+  
+</head>
+<header style="width: 100%;background-color: black;">
+    <div class="lin" style="background-color: black;">
+        <!-- <div class="topnav">
+            <a href="#home" class="active">Logo</a>
+            Navigation links (hidden by default)
+            <div id="myLinks">
+              <a href="#news">News</a>
+              <a href="/Html/Contact.html">Contact</a>
+              <a href="#about">About</a>
             </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <!-- <a href="javascript:void(0);" class="icon" onclick="burger()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div> --> -->
+        <div>
+        <a href="index.html"><img  src="capture1.PNG"></a>
+        <br>
+        <a href="shopping.html">Shopping</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="">Contact</a>
+
+        <a href="https://apps.apple.com/us/app/jj-lin-app/id841502890">JJ Lin app</a>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         </div>
-        <div class="container body-content">
+
+    </div>
+
+</header>
+<style>.content__wrap {
+  max-width: 980px;
+  margin: auto;
+  min-height: calc(100vh - 300px);
+  padding: 50px 0;
+}
+.slick-slider{position:relative;display:block;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}.slick-list{position:relative;display:block;overflow:hidden;margin:0;padding:0}.slick-list:focus{outline:none}.slick-list.dragging{cursor:pointer;cursor:hand}.slick-slider .slick-track,.slick-slider .slick-list{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.slick-track{position:relative;top:0;left:0;display:block;margin-left:auto;margin-right:auto}.slick-track:before,.slick-track:after{display:table;content:''}.slick-track:after{clear:both}.slick-loading .slick-track{visibility:hidden}.slick-slide{display:none;float:left;height:100%;min-height:1px}[dir="rtl"] .slick-slide{float:right}.slick-slide img{display:block}.slick-slide.slick-loading img{display:none}.slick-slide.dragging img{pointer-events:none}.slick-initialized .slick-slide{display:block}.slick-loading .slick-slide{visibility:hidden}.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}.slick-arrow.slick-hidden{display:none}
+
+</style>
+ <body>
+  
+  <table class="content__wrap">
+    <td >
+      <script>
+        const myObject = { hello: 'world' };
+        const myObjectString = JSON.stringify(myObject);
+        localStorage.setItem('objectGreeting', myObjectString);
+        </script>
+      <div class="card" >
+        <img src="product1.jpg" alt="Denim Jeans" style="width:100%">
+            <h1 style="font-size: medium;" id="name1">10 Year Anniversary Tee</h1>
+            <p class="price" id="price1" >$39</p>
+            <p>Free sizing</p>
+            <br>
             
-    <br>
-    <br>
-<img alt="" src="../Image/Product.jpg" style="width: 1120px; height: 239px"><br>
-
-    <table class="nav-justified" border="1">
-        <tbody><tr>
-            <td class="auto-style2" style="width: 700px">
-                <img id="MainContent_Image4" src="../image/Kobe%20All%20Star/1.jpg" style="height:300px;width:300px;margin-top: 10px">
-                <img id="MainContent_Image5" src="../image/Kobe%20All%20Star/2.jpg" style="height:300px;width:300px;margin-top: 10px">
-            </td>
-            <td class="text-center" style="width: 300px; font-size: large;">
-                
-                <span id="MainContent_Label1">Kobe 6 Protro All-Star</span><br>
-
-                Quantity:<select name="ctl00$MainContent$DropDownList10" id="MainContent_DropDownList10">
-	<option value="1">1</option>
-	<option value="2">2</option>
-	<option value="3">3</option>
-	<option value="4">4</option>
-	<option value="5">5</option>
-
-</select>
-                <br>
-                <span id="MainContent_Label5">Price :$</span>
-                <span id="MainContent_price1">279</span>
-                </td><td><table id="MainContent_rbl1" style="height:153px;width:172px;margin-top: 50px; margin-left:10px;">
-	<tbody><tr>
-		<td><input id="MainContent_rbl1_0" type="radio" name="ctl00$MainContent$rbl1" value="UK 6 / US 7"><label for="MainContent_rbl1_0">UK 6 / US 7</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl1_1" type="radio" name="ctl00$MainContent$rbl1" value="UK 6.5 / UK 7.5"><label for="MainContent_rbl1_1">UK 6.5 / UK 7.5</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl1_2" type="radio" name="ctl00$MainContent$rbl1" value="UK 7 / US 8"><label for="MainContent_rbl1_2">UK 7 / US 8</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl1_3" type="radio" name="ctl00$MainContent$rbl1" value="UK 7.5 / US 8.5"><label for="MainContent_rbl1_3">UK 7.5 / US 8.5</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl1_4" type="radio" name="ctl00$MainContent$rbl1" value="UK 8 / US 9"><label for="MainContent_rbl1_4">UK 8 / US 9</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl1_5" type="radio" name="ctl00$MainContent$rbl1" value="UK 8.5 / US 9.5"><label for="MainContent_rbl1_5">UK 8.5 / US 9.5</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl1_6" type="radio" name="ctl00$MainContent$rbl1" value="UK 9 / US 10"><label for="MainContent_rbl1_6">UK 9 / US 10</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl1_7" type="radio" name="ctl00$MainContent$rbl1" value="UK 9.5 / US 10.5"><label for="MainContent_rbl1_7">UK 9.5 / US 10.5</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl1_8" type="radio" name="ctl00$MainContent$rbl1" value="UK  10 / US 11"><label for="MainContent_rbl1_8">UK  10 / US 11</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl1_9" type="radio" name="ctl00$MainContent$rbl1" value="UK 10.5 / US 11.5"><label for="MainContent_rbl1_9">UK 10.5 / US 11.5</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl1_10" type="radio" name="ctl00$MainContent$rbl1" value="UK 11 / US 12"><label for="MainContent_rbl1_10">UK 11 / US 12</label></td>
-	</tr>
-</tbody></table></td>
-        </tr>
-        <tr>
-<td class="auto-style2" style="width: 700px">
-                <img id="MainContent_Image1" src="../image/Kobe%20Protro/1.jpg" style="height:300px;width:300px;margin-top: 10px">
-                <img id="MainContent_Image6" src="../image/Kobe%20Protro/2.jpg" style="height:300px;width:300px;margin-top: 10px">
-            </td>            <td class="text-center" style="width: 300px; font-size: large;">
-                <span id="MainContent_Label2">Kobe 6 Protro Green Apple</span><br>
-
-                Quantity:<select name="ctl00$MainContent$DropDownList20" id="MainContent_DropDownList20">
-	<option selected="selected" value="1">1</option>
-	<option value="2">2</option>
-	<option value="3">3</option>
-	<option value="4">4</option>
-	<option value="5">5</option>
-
-</select>
-                <br>
-                <span id="MainContent_Label7">Price :$</span>
-                <span id="MainContent_price2">249</span>
-                </td><td><table id="MainContent_rbl2" style="height:153px;width:172px;margin-top: 10px; margin-left:10px;">
-	<tbody><tr>
-		<td><input id="MainContent_rbl2_0" type="radio" name="ctl00$MainContent$rbl2" value="UK 6 / US 7"><label for="MainContent_rbl2_0">UK 6 / US 7</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl2_1" type="radio" name="ctl00$MainContent$rbl2" value="UK 6.5 / UK 7.5"><label for="MainContent_rbl2_1">UK 6.5 / UK 7.5</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl2_2" type="radio" name="ctl00$MainContent$rbl2" value="UK 7 / US 8"><label for="MainContent_rbl2_2">UK 7 / US 8</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl2_3" type="radio" name="ctl00$MainContent$rbl2" value="UK 7.5 / US 8.5"><label for="MainContent_rbl2_3">UK 7.5 / US 8.5</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl2_4" type="radio" name="ctl00$MainContent$rbl2" value="UK 8 / US 9"><label for="MainContent_rbl2_4">UK 8 / US 9</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl2_5" type="radio" name="ctl00$MainContent$rbl2" value="UK 8.5 / US 9.5"><label for="MainContent_rbl2_5">UK 8.5 / US 9.5</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl2_6" type="radio" name="ctl00$MainContent$rbl2" value="UK 9 / US 10"><label for="MainContent_rbl2_6">UK 9 / US 10</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl2_7" type="radio" name="ctl00$MainContent$rbl2" value="UK 9.5 / US 10.5"><label for="MainContent_rbl2_7">UK 9.5 / US 10.5</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl2_8" type="radio" name="ctl00$MainContent$rbl2" value="UK  10 / US 11"><label for="MainContent_rbl2_8">UK  10 / US 11</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl2_9" type="radio" name="ctl00$MainContent$rbl2" value="UK 10.5 / US 11.5"><label for="MainContent_rbl2_9">UK 10.5 / US 11.5</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl2_10" type="radio" name="ctl00$MainContent$rbl2" value="UK 11 / US 12"><label for="MainContent_rbl2_10">UK 11 / US 12</label></td>
-	</tr>
-</tbody></table></td>
-        </tr>
-        <tr>
-<td class="auto-style2" style="width: 700px">
-                <img id="MainContent_Image2" src="../image/Kyrie/1.jpg" style="height:300px;width:300px;margin-top: 10px">
-                <img id="MainContent_Image7" src="../image/Kyrie/2.jpg" style="height:300px;width:300px;margin-top: 10px">
-            </td>            <td class="text-center" style="width: 300px; font-size: large;">
-                <span id="MainContent_Label3">Kyrie 5 SpongeBob SquarePants</span><br>
-
-                Quantity:<select name="ctl00$MainContent$DropDownList30" id="MainContent_DropDownList30">
-	<option value="1">1</option>
-	<option value="2">2</option>
-	<option value="3">3</option>
-	<option value="4">4</option>
-	<option value="5">5</option>
-
-</select>
-                <br>
-                <span id="MainContent_Label9">Price :$</span>
-                <span id="MainContent_price3">199</span><br>
-
-            </td><td><table id="MainContent_rbl3" style="height:153px;width:172px;margin-top: 10px ;margin-left:10px;">
-	<tbody><tr>
-		<td><input id="MainContent_rbl3_0" type="radio" name="ctl00$MainContent$rbl3" value="UK 6 / US 7"><label for="MainContent_rbl3_0">UK 6 / US 7</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl3_1" type="radio" name="ctl00$MainContent$rbl3" value="UK 6.5 / UK 7.5"><label for="MainContent_rbl3_1">UK 6.5 / UK 7.5</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl3_2" type="radio" name="ctl00$MainContent$rbl3" value="UK 7 / US 8"><label for="MainContent_rbl3_2">UK 7 / US 8</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl3_3" type="radio" name="ctl00$MainContent$rbl3" value="UK 7.5 / US 8.5"><label for="MainContent_rbl3_3">UK 7.5 / US 8.5</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl3_4" type="radio" name="ctl00$MainContent$rbl3" value="UK 8 / US 9"><label for="MainContent_rbl3_4">UK 8 / US 9</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl3_5" type="radio" name="ctl00$MainContent$rbl3" value="UK 8.5 / US 9.5"><label for="MainContent_rbl3_5">UK 8.5 / US 9.5</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl3_6" type="radio" name="ctl00$MainContent$rbl3" value="UK 9 / US 10"><label for="MainContent_rbl3_6">UK 9 / US 10</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl3_7" type="radio" name="ctl00$MainContent$rbl3" value="UK 9.5 / US 10.5"><label for="MainContent_rbl3_7">UK 9.5 / US 10.5</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl3_8" type="radio" name="ctl00$MainContent$rbl3" value="UK  10 / US 11"><label for="MainContent_rbl3_8">UK  10 / US 11</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl3_9" type="radio" name="ctl00$MainContent$rbl3" value="UK 10.5 / US 11.5"><label for="MainContent_rbl3_9">UK 10.5 / US 11.5</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl3_10" type="radio" name="ctl00$MainContent$rbl3" value="UK 11 / US 12"><label for="MainContent_rbl3_10">UK 11 / US 12</label></td>
-	</tr>
-</tbody></table></td>
-        </tr>
-                <tr>
-<td class="auto-style2" style="width: 700px">
-                <img id="MainContent_Image3" src="../image/pg/1.jpg" style="height:300px;width:300px;margin-top: 10px">
-   
-<img id="MainContent_Image8" src="../image/pg/1.jpg" style="height:300px;width:300px;margin-top: 10px">            </td>            
-                    <td class="text-center" style="width: 300px; font-size: large;">
-                        <span id="MainContent_Label4">PG 5 Play For The Future</span><br>
-
-                Quantity:<select name="ctl00$MainContent$DropDownList40" id="MainContent_DropDownList40">
-	<option value="1">1</option>
-	<option value="2">2</option>
-	<option value="3">3</option>
-	<option value="4">4</option>
-	<option value="5">5</option>
-
-</select>
-                        <br>
-                        <span id="MainContent_Label11">Price :$</span>
-                <span id="MainContent_price4">169</span><br>
-
-            </td><td><table id="MainContent_rbl4" style="height:153px;width:172px;margin-top: 10px;margin-left:10px;">
-	<tbody><tr>
-		<td><input id="MainContent_rbl4_0" type="radio" name="ctl00$MainContent$rbl4" value="UK 6 / US 7"><label for="MainContent_rbl4_0">UK 6 / US 7</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl4_1" type="radio" name="ctl00$MainContent$rbl4" value="UK 6.5 / UK 7.5"><label for="MainContent_rbl4_1">UK 6.5 / UK 7.5</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl4_2" type="radio" name="ctl00$MainContent$rbl4" value="UK 7 / US 8"><label for="MainContent_rbl4_2">UK 7 / US 8</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl4_3" type="radio" name="ctl00$MainContent$rbl4" value="UK 7.5 / US 8.5"><label for="MainContent_rbl4_3">UK 7.5 / US 8.5</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl4_4" type="radio" name="ctl00$MainContent$rbl4" value="UK 8 / US 9"><label for="MainContent_rbl4_4">UK 8 / US 9</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl4_5" type="radio" name="ctl00$MainContent$rbl4" value="UK 8.5 / US 9.5"><label for="MainContent_rbl4_5">UK 8.5 / US 9.5</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl4_6" type="radio" name="ctl00$MainContent$rbl4" value="UK 9 / US 10"><label for="MainContent_rbl4_6">UK 9 / US 10</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl4_7" type="radio" name="ctl00$MainContent$rbl4" value="UK 9.5 / US 10.5"><label for="MainContent_rbl4_7">UK 9.5 / US 10.5</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl4_8" type="radio" name="ctl00$MainContent$rbl4" value="UK  10 / US 11"><label for="MainContent_rbl4_8">UK  10 / US 11</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl4_9" type="radio" name="ctl00$MainContent$rbl4" value="UK 10.5 / US 11.5"><label for="MainContent_rbl4_9">UK 10.5 / US 11.5</label></td>
-	</tr><tr>
-		<td><input id="MainContent_rbl4_10" type="radio" name="ctl00$MainContent$rbl4" value="UK 11 / US 12"><label for="MainContent_rbl4_10">UK 11 / US 12</label></td>
-	</tr>
-</tbody></table></td>
-        </tr>
-        </tbody></table>
-    <table>
-        <tbody><tr>
-                     <td class="text-center" style="width: 5000px"><input type="submit" name="ctl00$MainContent$Btn_BUY" value="Check Out" id="MainContent_Btn_BUY" style="height:66px;width:210px;font-size: large; font-weight: bold">
-
-        </td></tr>
-       </tbody></table>
-
-
-    
-                    
-                
-            
-        
-        
-
-            <hr>
-            <footer>
-            <style>                    
-                
-
-               
-                .auto-style6 {
-                    width: 80px;
-                }
-                .auto-style7 {
-                    width: 100%;
-                }
-
-                </style>
-                <table class="nav-justified">
-                    <tbody><tr>
-                        <td class="auto-style1"><span class="cards" title="We accept Visa, Visa Electron, Mastercard, Maestro, American Express, PayPal"> We accept the following payment methods<br> <img src="https://i8.amplience.net/i/jpl/payment-banner-02-e66f2bd21b60309e3ca460edaad6828b" class="auto-style2"></span> &nbsp;</td>
-                        <td>
-                            <table class="auto-style7">
-                                <tbody><tr>
-                                    <td class="auto-style6">&nbsp;<a target="_blank" aria-label="Twitter" title="Twitter" data-type="click_navFooter" data-path="social:twitter" class="social-link footer-link" href="https://twitter.com/Nike" data-pre="ILink"><svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24"><path d="M12 0C9.813 0 7.8.533 5.96 1.6A11.793 11.793 0 0 0 1.6 5.96C.533 7.8 0 9.813 0 12s.533 4.2 1.6 6.04a11.793 11.793 0 0 0 4.36 4.36C7.8 23.467 9.813 24 12 24s4.2-.533 6.04-1.6a11.793 11.793 0 0 0 4.36-4.36C23.467 16.2 24 14.187 24 12s-.533-4.2-1.6-6.04a11.793 11.793 0 0 0-4.36-4.36C16.2.533 14.187 0 12 0zm6 9.28v.4c0 1.387-.333 2.72-1 4a8.186 8.186 0 0 1-2.84 3.12c-1.333.853-2.827 1.28-4.48 1.28a8.535 8.535 0 0 1-4.56-1.28h.72c1.387 0 2.613-.427 3.68-1.28-.64 0-1.213-.2-1.72-.6-.507-.4-.867-.92-1.08-1.56l.56.16c.373 0 .64-.053.8-.16a2.67 2.67 0 0 1-1.72-1 2.913 2.913 0 0 1-.68-1.88c.427.267.88.4 1.36.4-.907-.533-1.36-1.36-1.36-2.48 0-.533.133-1.04.4-1.52.8.96 1.72 1.707 2.76 2.24a8.133 8.133 0 0 0 3.4.88c-.107-.16-.16-.4-.16-.72 0-.8.293-1.493.88-2.08s1.28-.88 2.08-.88 1.547.293 2.24.88c.48-.107 1.12-.347 1.92-.72-.213.747-.64 1.28-1.28 1.6H18c.747-.16 1.28-.32 1.6-.48-.533.693-1.067 1.253-1.6 1.68z"></path></svg></a></td>
-                                    <td class="auto-style6">&nbsp;<a target="_blank" aria-label="Facebook" title="Facebook" data-type="click_navFooter" data-path="social:facebook" class="social-link footer-link" href="https://www.facebook.com/nike" data-pre="ILink"><svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24"><path d="M12 0C9.813 0 7.8.533 5.96 1.6A11.793 11.793 0 0 0 1.6 5.96C.533 7.8 0 9.813 0 12s.533 4.2 1.6 6.04a11.793 11.793 0 0 0 4.36 4.36C7.8 23.467 9.813 24 12 24s4.2-.533 6.04-1.6a11.793 11.793 0 0 0 4.36-4.36C23.467 16.2 24 14.187 24 12s-.533-4.2-1.6-6.04a11.793 11.793 0 0 0-4.36-4.36C16.2.533 14.187 0 12 0zm3.12 12h-2v7.2H10.4V12H8.64V9.52h1.76V8c0-1.12.187-1.92.56-2.4.427-.587 1.2-.88 2.32-.88h2V7.2h-1.2c-.427 0-.693.067-.8.2-.107.133-.16.387-.16.76v1.2h2.16L15.12 12z"></path></svg></a></td>
-                                    <td class="auto-style6">&nbsp;<a target="_blank" aria-label="Youtube" title="Youtube" data-type="click_navFooter" data-path="social:youtube" class="social-link footer-link" href="https://www.youtube.com/user/nike" data-pre="ILink"><svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24"><path d="M11.28 17.6a.604.604 0 0 1-.2.24.43.43 0 0 1-.24.08c-.08 0-.133-.027-.16-.08a.557.557 0 0 1-.04-.24v-2.96h-.72v3.28a1 1 0 0 0 .12.52c.08.133.2.2.36.2.16 0 .307-.053.44-.16.133-.107.28-.24.44-.4v.48H12v-3.92h-.72v2.96zM6.96 14v-.8H9.6v.8h-.88v4.56h-.88V14h-.88zm4.96-4.72c-.107 0-.2-.04-.28-.12a.384.384 0 0 1-.12-.28v-2.4c0-.053.027-.107.08-.16.053-.053.147-.08.28-.08.133 0 .24.027.32.08a.27.27 0 0 1 .12.24v2.32c0 .107-.04.2-.12.28a.384.384 0 0 1-.28.12zm2 8.32c0-.64.027-1.307.08-2 0-.107-.04-.2-.12-.28-.08-.08-.16-.12-.24-.12h-.12l-.24.16v2.4l.24.16.16.08c.107 0 .173-.027.2-.08.027-.053.04-.16.04-.32zm.08-3.04c.213 0 .387.08.52.24.133.16.2.4.2.72v2.24c0 .267-.053.48-.16.64a.422.422 0 0 1-.44.2 2.1 2.1 0 0 1-.48-.12.506.506 0 0 1-.28-.24v.32h-.8V13.2h.8v1.76c.107-.107.213-.2.32-.28a.532.532 0 0 1 .32-.12zm3.92 5.12c.267-.213.427-.907.48-2.08.053-.587.107-1.147.16-1.68 0-.48-.053-1.013-.16-1.6-.107-1.173-.28-1.893-.52-2.16-.24-.267-1.267-.453-3.08-.56l-2.64-.08-2.72.08c-1.813.107-2.84.293-3.08.56-.24.267-.413.987-.52 2.16a16.07 16.07 0 0 0-.08 1.6c0 .533.027 1.093.08 1.68.107 1.173.28 1.88.52 2.12.24.24 1.267.44 3.08.6l2.72.08 2.64-.08c1.813-.16 2.853-.347 3.12-.56v-.08zM8.4 4h-.96l1.12 3.6v2.24h.96v-2.4L10.64 4h-.96l-.56 2.32h-.08L8.4 4zm2.32 2.56V8.8c0 .373.107.667.32.88.213.213.507.32.88.32s.667-.107.88-.32c.213-.213.32-.507.32-.88V6.56c0-.32-.107-.587-.32-.8-.213-.213-.507-.32-.88-.32s-.667.107-.88.32c-.213.213-.32.48-.32.8zm3.12-.96v3.6a1 1 0 0 0 .12.52c.08.133.213.2.4.2.187 0 .36-.04.52-.12.16-.08.32-.2.48-.36v.48h.88V5.6h-.88v3.2a.523.523 0 0 1-.24.24.645.645 0 0 1-.28.08c-.08 0-.133-.013-.16-.04-.027-.027-.04-.093-.04-.2V5.52h-.8v.08zM12 0c2.187 0 4.2.533 6.04 1.6a11.793 11.793 0 0 1 4.36 4.36C23.467 7.8 24 9.813 24 12s-.533 4.2-1.6 6.04a11.793 11.793 0 0 1-4.36 4.36C16.2 23.467 14.187 24 12 24s-4.2-.533-6.04-1.6a11.793 11.793 0 0 1-4.36-4.36C.533 16.2 0 14.187 0 12s.533-4.2 1.6-6.04A11.793 11.793 0 0 1 5.96 1.6C7.8.533 9.813 0 12 0zm4.56 16.08l-.08-.4c0-.16-.027-.28-.08-.36a.27.27 0 0 0-.24-.12.27.27 0 0 0-.24.12c-.053.08-.08.2-.08.36v.4h.72zm-.32-1.52c.32 0 .573.093.76.28.187.187.28.467.28.84v.96h-1.44v.8c0 .16.027.28.08.36.053.08.147.12.28.12.133 0 .227-.04.28-.12.053-.08.08-.227.08-.44v-.16h.72v.24c0 .373-.093.667-.28.88-.187.213-.453.32-.8.32-.347 0-.613-.107-.8-.32-.187-.213-.28-.507-.28-.88v-1.76c0-.32.107-.587.32-.8.213-.213.48-.32.8-.32z"></path></svg></a></td>
-                                    <td class="auto-style6">&nbsp;<a target="_blank" aria-label="Instagram " title="Instagram " data-type="click_navFooter" data-path="social:instagram" class="social-link footer-link" href="https://instagram.com/nike" data-pre="ILink"><svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24"><path d="M16 12.48a4.723 4.723 0 0 1-.56 1.48 3.93 3.93 0 0 1-1.04 1.16 3.428 3.428 0 0 1-1.92.68 3.628 3.628 0 0 1-1.96-.48 3.414 3.414 0 0 1-1.4-1.48c-.48-.96-.587-1.973-.32-3.04H7.68l.08 5.52c0 .107.04.213.12.32.08.107.173.16.28.16h8.32c.107 0 .213-.053.32-.16.107-.107.16-.213.16-.32V10.8h-1.12c.16.533.213 1.093.16 1.68zm-3.68 2c.64 0 1.2-.24 1.68-.72s.72-1.053.72-1.72a2.56 2.56 0 0 0-.68-1.76c-.453-.507-1.013-.76-1.68-.76s-1.24.24-1.72.72-.72 1.053-.72 1.72.227 1.253.68 1.76c.453.507 1 .76 1.64.76h.08zm4.16-7.6h-1.12c-.107 0-.213.053-.32.16-.107.107-.16.213-.16.32v1.36c.107.213.267.32.48.32h1.12c.16 0 .28-.053.36-.16a.532.532 0 0 0 .12-.32v-1.2c0-.107-.053-.213-.16-.32-.107-.107-.213-.16-.32-.16zM12 0C9.813 0 7.8.533 5.96 1.6A11.793 11.793 0 0 0 1.6 5.96C.533 7.8 0 9.813 0 12s.533 4.2 1.6 6.04a11.793 11.793 0 0 0 4.36 4.36C7.8 23.467 9.813 24 12 24s4.2-.533 6.04-1.6a11.793 11.793 0 0 0 4.36-4.36C23.467 16.2 24 14.187 24 12s-.533-4.2-1.6-6.04a11.793 11.793 0 0 0-4.36-4.36C16.2.533 14.187 0 12 0zm6.24 16.88l-.08.08v.08a.926.926 0 0 1-.28.68 1.3 1.3 0 0 1-.68.36H7.52a.871.871 0 0 1-.68-.32 1.536 1.536 0 0 1-.36-.72l-.08-.16.08-9.84c0-.267.093-.507.28-.72.187-.213.413-.347.68-.4h9.68a1.3 1.3 0 0 1 .68.36 1.3 1.3 0 0 1 .36.68l.08 9.92z"></path></svg></a></td>
-                                
-                                </tr>
-                            </tbody></table>
-                     
-                </td></tr></tbody></table>
-            </footer>
-        </div>
-    </form>
-
-
+            <p><a href="checkout.html"><button type="button" style="color: white;text-decoration: none; " id="button1"   onclick="addtocart()" >Add to Cart</button></a></p>
+          </div>
+    </td>
+    <td>
+      <div class="card" style="margin-left: 50px;">
+        <img src="Product2.png" alt="Denim Jeans" style="width:100%">
+            <h1 style="font-size: medium;" id="name2" >Bitcoin Token</h1>
+            <p class="price" id="price2" >$199</p>
+            <p ></p>
+            <br>
+            <br>
+            <br>
+            <p><button><a style="color: white;text-decoration: none; " id="button2"  href="" >Add to Cart</a></button></p>
+          </div>
+    </td>
+    <td>
+        <div class="card" style="margin-left: 50px;">
+            <img src="product3.png" alt="Denim Jeans" style="width:100%">
+            <h1 style="font-size: medium;" id="name3">Limited Edition Recycled Straw </h1>
+            <p class="price" id="price3">$29</p>
+            <p></p>
+            <br>
+            <br>
+            <br>
+            <p><button><a style="color: white;text-decoration: none; " id="button1"  href="checkout.html" >Add to Cart</a></button></p>
+          </div>
+          
+    </td>
+</table> 
 </body>
+
+<footer style="background-color: white;width: 100%;">
+    <hr >
+    <div class="column" style="text-align: center;">
+        <strong><span style="font-size: medium">Email:</span></strong>
+        <span style="font-size: medium"> <a href="mailto:service@jjlin.com">service@jjlin.com</a><span style="text-decoration: underline"> </span> </span>
+        <strong><span >Contact Number : </span></strong><span>9988 7777</span>
+    </div>
+    <div class="column">
+        
+        <span >&nbsp;
+            <a target="_blank" aria-label="Twitter" title="Twitter" data-type="click_navFooter" data-path="social:twitter" class="social-link footer-link" href="https://twitter.com/jj_lin" data-pre="ILink"><svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24"><path d="M12 0C9.813 0 7.8.533 5.96 1.6A11.793 11.793 0 0 0 1.6 5.96C.533 7.8 0 9.813 0 12s.533 4.2 1.6 6.04a11.793 11.793 0 0 0 4.36 4.36C7.8 23.467 9.813 24 12 24s4.2-.533 6.04-1.6a11.793 11.793 0 0 0 4.36-4.36C23.467 16.2 24 14.187 24 12s-.533-4.2-1.6-6.04a11.793 11.793 0 0 0-4.36-4.36C16.2.533 14.187 0 12 0zm6 9.28v.4c0 1.387-.333 2.72-1 4a8.186 8.186 0 0 1-2.84 3.12c-1.333.853-2.827 1.28-4.48 1.28a8.535 8.535 0 0 1-4.56-1.28h.72c1.387 0 2.613-.427 3.68-1.28-.64 0-1.213-.2-1.72-.6-.507-.4-.867-.92-1.08-1.56l.56.16c.373 0 .64-.053.8-.16a2.67 2.67 0 0 1-1.72-1 2.913 2.913 0 0 1-.68-1.88c.427.267.88.4 1.36.4-.907-.533-1.36-1.36-1.36-2.48 0-.533.133-1.04.4-1.52.8.96 1.72 1.707 2.76 2.24a8.133 8.133 0 0 0 3.4.88c-.107-.16-.16-.4-.16-.72 0-.8.293-1.493.88-2.08s1.28-.88 2.08-.88 1.547.293 2.24.88c.48-.107 1.12-.347 1.92-.72-.213.747-.64 1.28-1.28 1.6H18c.747-.16 1.28-.32 1.6-.48-.533.693-1.067 1.253-1.6 1.68z"></path></svg></a></span>
+        <span >&nbsp;
+            <a target="_blank" aria-label="Facebook" title="Facebook" data-type="click_navFooter" data-path="social:facebook" class="social-link footer-link" href="https://www.facebook.com/JJLin/" data-pre="ILink"><svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24"><path d="M12 0C9.813 0 7.8.533 5.96 1.6A11.793 11.793 0 0 0 1.6 5.96C.533 7.8 0 9.813 0 12s.533 4.2 1.6 6.04a11.793 11.793 0 0 0 4.36 4.36C7.8 23.467 9.813 24 12 24s4.2-.533 6.04-1.6a11.793 11.793 0 0 0 4.36-4.36C23.467 16.2 24 14.187 24 12s-.533-4.2-1.6-6.04a11.793 11.793 0 0 0-4.36-4.36C16.2.533 14.187 0 12 0zm3.12 12h-2v7.2H10.4V12H8.64V9.52h1.76V8c0-1.12.187-1.92.56-2.4.427-.587 1.2-.88 2.32-.88h2V7.2h-1.2c-.427 0-.693.067-.8.2-.107.133-.16.387-.16.76v1.2h2.16L15.12 12z"></path></svg></a></span>
+        <span >&nbsp;
+            <a target="_blank" aria-label="Youtube" title="Youtube" data-type="click_navFooter" data-path="social:youtube" class="social-link footer-link" href="https://m.youtube.com/c/jjlin/videos" data-pre="ILink"><svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24"><path d="M11.28 17.6a.604.604 0 0 1-.2.24.43.43 0 0 1-.24.08c-.08 0-.133-.027-.16-.08a.557.557 0 0 1-.04-.24v-2.96h-.72v3.28a1 1 0 0 0 .12.52c.08.133.2.2.36.2.16 0 .307-.053.44-.16.133-.107.28-.24.44-.4v.48H12v-3.92h-.72v2.96zM6.96 14v-.8H9.6v.8h-.88v4.56h-.88V14h-.88zm4.96-4.72c-.107 0-.2-.04-.28-.12a.384.384 0 0 1-.12-.28v-2.4c0-.053.027-.107.08-.16.053-.053.147-.08.28-.08.133 0 .24.027.32.08a.27.27 0 0 1 .12.24v2.32c0 .107-.04.2-.12.28a.384.384 0 0 1-.28.12zm2 8.32c0-.64.027-1.307.08-2 0-.107-.04-.2-.12-.28-.08-.08-.16-.12-.24-.12h-.12l-.24.16v2.4l.24.16.16.08c.107 0 .173-.027.2-.08.027-.053.04-.16.04-.32zm.08-3.04c.213 0 .387.08.52.24.133.16.2.4.2.72v2.24c0 .267-.053.48-.16.64a.422.422 0 0 1-.44.2 2.1 2.1 0 0 1-.48-.12.506.506 0 0 1-.28-.24v.32h-.8V13.2h.8v1.76c.107-.107.213-.2.32-.28a.532.532 0 0 1 .32-.12zm3.92 5.12c.267-.213.427-.907.48-2.08.053-.587.107-1.147.16-1.68 0-.48-.053-1.013-.16-1.6-.107-1.173-.28-1.893-.52-2.16-.24-.267-1.267-.453-3.08-.56l-2.64-.08-2.72.08c-1.813.107-2.84.293-3.08.56-.24.267-.413.987-.52 2.16a16.07 16.07 0 0 0-.08 1.6c0 .533.027 1.093.08 1.68.107 1.173.28 1.88.52 2.12.24.24 1.267.44 3.08.6l2.72.08 2.64-.08c1.813-.16 2.853-.347 3.12-.56v-.08zM8.4 4h-.96l1.12 3.6v2.24h.96v-2.4L10.64 4h-.96l-.56 2.32h-.08L8.4 4zm2.32 2.56V8.8c0 .373.107.667.32.88.213.213.507.32.88.32s.667-.107.88-.32c.213-.213.32-.507.32-.88V6.56c0-.32-.107-.587-.32-.8-.213-.213-.507-.32-.88-.32s-.667.107-.88.32c-.213.213-.32.48-.32.8zm3.12-.96v3.6a1 1 0 0 0 .12.52c.08.133.213.2.4.2.187 0 .36-.04.52-.12.16-.08.32-.2.48-.36v.48h.88V5.6h-.88v3.2a.523.523 0 0 1-.24.24.645.645 0 0 1-.28.08c-.08 0-.133-.013-.16-.04-.027-.027-.04-.093-.04-.2V5.52h-.8v.08zM12 0c2.187 0 4.2.533 6.04 1.6a11.793 11.793 0 0 1 4.36 4.36C23.467 7.8 24 9.813 24 12s-.533 4.2-1.6 6.04a11.793 11.793 0 0 1-4.36 4.36C16.2 23.467 14.187 24 12 24s-4.2-.533-6.04-1.6a11.793 11.793 0 0 1-4.36-4.36C.533 16.2 0 14.187 0 12s.533-4.2 1.6-6.04A11.793 11.793 0 0 1 5.96 1.6C7.8.533 9.813 0 12 0zm4.56 16.08l-.08-.4c0-.16-.027-.28-.08-.36a.27.27 0 0 0-.24-.12.27.27 0 0 0-.24.12c-.053.08-.08.2-.08.36v.4h.72zm-.32-1.52c.32 0 .573.093.76.28.187.187.28.467.28.84v.96h-1.44v.8c0 .16.027.28.08.36.053.08.147.12.28.12.133 0 .227-.04.28-.12.053-.08.08-.227.08-.44v-.16h.72v.24c0 .373-.093.667-.28.88-.187.213-.453.32-.8.32-.347 0-.613-.107-.8-.32-.187-.213-.28-.507-.28-.88v-1.76c0-.32.107-.587.32-.8.213-.213.48-.32.8-.32z"></path></svg></a></span>
+        <span >&nbsp;
+            <a target="_blank" aria-label="Instagram " title="Instagram " data-type="click_navFooter" data-path="social:instagram" class="social-link footer-link" href="https://www.instagram.com/jjlin/?hl=en" data-pre="ILink"><svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24"><path d="M16 12.48a4.723 4.723 0 0 1-.56 1.48 3.93 3.93 0 0 1-1.04 1.16 3.428 3.428 0 0 1-1.92.68 3.628 3.628 0 0 1-1.96-.48 3.414 3.414 0 0 1-1.4-1.48c-.48-.96-.587-1.973-.32-3.04H7.68l.08 5.52c0 .107.04.213.12.32.08.107.173.16.28.16h8.32c.107 0 .213-.053.32-.16.107-.107.16-.213.16-.32V10.8h-1.12c.16.533.213 1.093.16 1.68zm-3.68 2c.64 0 1.2-.24 1.68-.72s.72-1.053.72-1.72a2.56 2.56 0 0 0-.68-1.76c-.453-.507-1.013-.76-1.68-.76s-1.24.24-1.72.72-.72 1.053-.72 1.72.227 1.253.68 1.76c.453.507 1 .76 1.64.76h.08zm4.16-7.6h-1.12c-.107 0-.213.053-.32.16-.107.107-.16.213-.16.32v1.36c.107.213.267.32.48.32h1.12c.16 0 .28-.053.36-.16a.532.532 0 0 0 .12-.32v-1.2c0-.107-.053-.213-.16-.32-.107-.107-.213-.16-.32-.16zM12 0C9.813 0 7.8.533 5.96 1.6A11.793 11.793 0 0 0 1.6 5.96C.533 7.8 0 9.813 0 12s.533 4.2 1.6 6.04a11.793 11.793 0 0 0 4.36 4.36C7.8 23.467 9.813 24 12 24s4.2-.533 6.04-1.6a11.793 11.793 0 0 0 4.36-4.36C23.467 16.2 24 14.187 24 12s-.533-4.2-1.6-6.04a11.793 11.793 0 0 0-4.36-4.36C16.2.533 14.187 0 12 0zm6.24 16.88l-.08.08v.08a.926.926 0 0 1-.28.68 1.3 1.3 0 0 1-.68.36H7.52a.871.871 0 0 1-.68-.32 1.536 1.536 0 0 1-.36-.72l-.08-.16.08-9.84c0-.267.093-.507.28-.72.187-.213.413-.347.68-.4h9.68a1.3 1.3 0 0 1 .68.36 1.3 1.3 0 0 1 .36.68l.08 9.92z"></path></svg></a></span>
+
+    </div>
+    <p>&nbsp;</p>
+    <p style="text-align: center;">Copyright@ SanctuaryTech,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All Rights Reserved powered by SANCTUARYTECH</p>
+</footer>
+</html>
+</html>
+

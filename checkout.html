@@ -1,506 +1,290 @@
-<div class="container body-content">
-            
-    <table class="nav-justified">
-        <tbody><tr>
-            <td class="text-center" colspan="3">
-                <br>
-                <strong><span style="font-size: x-large; color: #000000">
-                <br>
-                <br>
-                <br>
-                <br>
-                Place Your </span></strong><span style="font-size: x-large; color: #FF0000; "><strong>Orders</strong></span><strong><span style="font-size: x-large; color: #000000"> With Us!</span></strong><br></td>
-        
-        </tr>
-        <tr>
-            <td class="text-left" style="height: 22px; ">
-                <span id="MainContent_lblname">Name:</span>
-            </td>
-            <td style="height: 22px">
-                <input name="ctl00$MainContent$tbName" type="text" id="MainContent_tbName">
-                <span data-val-controltovalidate="MainContent_tbName" data-val-errormessage="Please enter your name!" id="MainContent_req1" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Please enter your name!</span>
-            </td>
-            <td style="height: 22px"></td>
-        </tr>
-        <tr>
-            <td class="text-left">
-                <span id="MainContent_lblContact">Contact:</span>
-            </td>
-            <td>
-                <input name="ctl00$MainContent$tbContact" type="text" id="MainContent_tbContact">
-                <span data-val-controltovalidate="MainContent_tbContact" data-val-errormessage="Please enter your contact number!" data-val-display="Dynamic" id="MainContent_req2" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="display:none;">Please enter your contact number!</span>
-               <span data-val-controltovalidate="MainContent_tbContact" data-val-errormessage="Invalid Contact Number" data-val-display="Dynamic" id="MainContent_Contact" data-val="true" data-val-evaluationfunction="RegularExpressionValidatorEvaluateIsValid" data-val-validationexpression="^[0-9]{8}$" style="display:none;">Invalid Contact Number</span>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Normalize.css">
 
-            </td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="text-left">
-                <span id="MainContent_lblEmail">Email:</span>
-            </td>
-            <td>
-                <input name="ctl00$MainContent$tbEmail" type="text" id="MainContent_tbEmail">
-<span data-val-controltovalidate="MainContent_tbEmail" data-val-errormessage="Please Enter Ur Email" data-val-display="Dynamic" id="MainContent_req3" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="display:none;">Please Enter Ur Email</span>
-               <span data-val-controltovalidate="MainContent_tbEmail" data-val-errormessage="Invalid email address" data-val-display="Dynamic" id="MainContent_RegularExpressionValidator1" data-val="true" data-val-evaluationfunction="RegularExpressionValidatorEvaluateIsValid" data-val-validationexpression="^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" style="display:none;">Invalid email address</span>
-            </td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="text-left">
-                <span id="MainContent_lblEmail0">Retype Email:</span>
-            </td>
-            <td>
-                <input name="ctl00$MainContent$tbRetypeEmail" type="text" id="MainContent_tbRetypeEmail">
-                <span data-val-controltovalidate="MainContent_tbRetypeEmail" data-val-errormessage="Please check your email again!" id="MainContent_CompareValidator1" data-val="true" data-val-evaluationfunction="CompareValidatorEvaluateIsValid" data-val-controltocompare="MainContent_tbEmail" data-val-controlhookup="MainContent_tbEmail" style="visibility:hidden;">Please check your email again!</span>
-               </td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="text-left">
-                <span id="MainContent_lblAddress">Address:</span>
-            </td>
-            <td>
-                <input name="ctl00$MainContent$tbAddress" type="text" id="MainContent_tbAddress">
-                <span data-val-controltovalidate="MainContent_tbAddress" data-val-errormessage="Please enter an address!" id="MainContent_req4" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Please enter an address!</span>
-            </td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="text-left">
-                <span id="MainContent_lblPostal">Postal Code:</span>
-            </td>
-            <td>
-                <input name="ctl00$MainContent$tbPostal" type="text" id="MainContent_tbPostal">
-             <span data-val-controltovalidate="MainContent_tbPostal" data-val-errormessage="Invalid Postal Code " data-val-display="Dynamic" id="MainContent_Postal" data-val="true" data-val-evaluationfunction="RegularExpressionValidatorEvaluateIsValid" data-val-validationexpression="^[0-9]{6}$" style="display:none;">Invalid Postal Code </span>
-                  <span data-val-controltovalidate="MainContent_tbPostal" data-val-errormessage="Please enter Postal Code!" data-val-display="Dynamic" id="MainContent_req5" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="display:none;">Please enter Postal Code!</span>
-
-                </td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="text-left">
-                <span id="MainContent_lblCountry">Country:</span>
-            </td>
-            <td>
-                <select name="ctl00$MainContent$drpCountry" id="MainContent_drpCountry">
-	<option value="Singapore">Singapore</option>
-	<option value="Malaysia">Malaysia</option>
-	<option value="Thailand">Thailand</option>
-	<option value="India">India</option>
-	<option value="China">China</option>
-	<option value="Russia">Russia</option>
-	<option value="Germany">Germany</option>
-	<option value="Switzerland">Switzerland</option>
-	<option value="Africa">Africa</option>
-	<option value="United Kingdom">United Kingdom</option>
-	<option value="United States">United States</option>
-	<option value="Canada">Canada</option>
-	<option value="South America">South America</option>
-	<option value="South Korea">South Korea</option>
-	<option value="Japan">Japan</option>
-
-</select>
-            </td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td colspan="3" class="text-center">
-                
-            </td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-            </tbody></table><table class="nav-justified">
-                    <tbody><tr>
-                        <td class="text-center" style="height: 20px" colspan="5">
-                            <span id="MainContent_Label1" style="font-family:Bahnschrift SemiLight;font-size:XX-Large;font-weight:bold;font-style:italic;">Cart</span>
-                            &nbsp;</td>
-
-                    </tr>
-                    <tr class="text-center">
-                        <td style="width: 287px">
-                            <span id="MainContent_Label9">Product Name</span>
-                            </td>
-                        <td style="width: 316px">
-                            <span id="MainContent_Label10">Quantity</span>
-                            </td>
-                        <td style="width: 180px">
-                            <span id="MainContent_Label11">Size</span>
-                            </td>
-                        <td>
-                            <span id="MainContent_Label12">Price Per Unit</span>
-                            </td>
-                        <td>
-                            <span id="MainContent_Label13">Total Price</span>
-                             </td>
-                    </tr>
-                     <tr class="text-center">
-                        <td style="width: 287px">
-                            <span id="MainContent_Name1"></span>
-                        </td>
-                        <td style="width: 316px">
-                            <span id="MainContent_q1">1</span>
-                        </td>
-                        <td style="width: 180px">
-                            <span id="MainContent_size1">UK 8 / US 9</span>
-                         </td>
-                        <td>
-                            <span id="MainContent_price1">279</span>
-                         </td>
-                         <td>
-                             <span id="MainContent_t1">279</span></td>
-                    </tr>
-                    <tr class="text-center">
-                        <td style="width: 287px">
-                            <span id="MainContent_Name2"></span>
-                        </td>
-                        <td style="width: 316px">
-                            <span id="MainContent_q2"></span>
-                        </td>
-                        <td style="width: 180px">
-                            <span id="MainContent_size2"></span>
-                        </td>
-                        <td>
-                            <span id="MainContent_price2"></span>
-                        </td>
-                        <td>
-                            <span id="MainContent_t2"></span>
-                        </td>
-                    </tr>
-                    <tr class="text-center">
-                        <td style="width: 287px; height: 20px">
-                            <span id="MainContent_Name3"></span>
-                        </td>
-                        <td style="height: 20px; width: 316px;">
-                            <span id="MainContent_q3"></span>
-                        </td>
-                        <td style="height: 20px; width: 180px;">
-                            <span id="MainContent_size3"></span>
-                        </td>
-                        <td style="height: 20px">
-                            <span id="MainContent_price3"></span>
-                        </td>
-                        <td>
-                            <span id="MainContent_t3"></span></td>
-                    </tr>
-                    <tr class="text-center">
-                        <td style="width: 287px">
-                            <span id="MainContent_Name4"></span>
-                        </td>
-                        <td style="width: 316px">
-                            <span id="MainContent_q4"></span>
-                        </td>
-                        <td style="width: 180px">
-                            <span id="MainContent_size4"></span>
-                        </td>
-                        <td>
-                            <span id="MainContent_price4"></span>
-                        </td>
-                        <td>
-                            <span id="MainContent_t4"></span></td>
-                    </tr>
-                    <tr class="text-center">
-                        <td style="width: 287px">&nbsp;</td>
-                        <td colspan="2" class="text-center">
-                            &nbsp;</td>
-                                                    <td style="width: 180px">
-                                                        <span id="MainContent_Label14">Total Price :</span>
-                                                        </td>
-
-                        <td><span id="MainContent_total1">279</span></td>
-                    </tr>
-                <tr>
-                    <td colspan="5" class="text-center">
-                            
-                        </td>
-
-
-                </tr>
-                </tbody></table>
-            
-            
-                <span style="font-size: 6pt">
-               <p>&nbsp;</p>
-                </span>
-            
-        
-        
-            
-                &nbsp;
-            
-        
-        
-            
-                <script src="../a.js"></script>
-
-                <span id="MainContent_Label8">Payment Method:</span>
-                <table id="MainContent_CheckBoxList1">
-	<tbody><tr>
-		<td><input id="MainContent_CheckBoxList1_0" type="checkbox" name="ctl00$MainContent$CheckBoxList1$0" onclick="ChkList(this);" value="1"><label for="MainContent_CheckBoxList1_0">Visa</label></td>
-	</tr><tr>
-		<td><input id="MainContent_CheckBoxList1_1" type="checkbox" name="ctl00$MainContent$CheckBoxList1$1" onclick="ChkList(this);" value="2"><label for="MainContent_CheckBoxList1_1">MasterCard</label></td>
-	</tr>
-</tbody></table>
-                
-           
-
-                
-           
-
-            
-        
-         
-            
-
-                <span id="MainContent_Label6">Name of Cardholder:</span>
-
-            
-            
-
-            &nbsp;&nbsp;&nbsp;<input name="ctl00$MainContent$TextBox1" type="text" id="MainContent_TextBox1" class="col-xs-offset-0" style="width:161px;">
-
-            <span data-val-controltovalidate="MainContent_TextBox1" data-val-errormessage="Please enter the name of cardholder." id="MainContent_reqName1" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Please enter the name of cardholder.</span>
-                
-           
-
-            
-        
-         
-            
-                <br>
-                <span id="MainContent_Label3">Card Number:</span>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-            
-            
-
-                <input name="ctl00$MainContent$TextBox2" type="text" id="MainContent_TextBox2" style="width:161px;">
-
-            &nbsp;<span data-val-controltovalidate="MainContent_TextBox2" data-val-errormessage="Please enter card number." data-val-display="Dynamic" id="MainContent_reqName2" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="display:none;">Please enter card number.</span>
-                <span data-val-controltovalidate="MainContent_TextBox2" data-val-errormessage="Invalid Card Number" data-val-display="Dynamic" id="MainContent_RegularexpressionValidator2" data-val="true" data-val-evaluationfunction="RegularExpressionValidatorEvaluateIsValid" data-val-validationexpression="^[0-9]{16}$" style="display:none;">Invalid Card Number</span>
-           
-
-            
-        
-         
-            
-                <br>
-                <span id="MainContent_Label4">CVC:</span>
-
-            
-            
-
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<input name="ctl00$MainContent$TextBox3" type="text" id="MainContent_TextBox3" style="width:161px;">
-
-           <span data-val-controltovalidate="MainContent_TextBox3" data-val-errormessage="Please enter Card CVC" data-val-display="Dynamic" id="MainContent_RequiredFieldValidator3" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="display:none;">Please enter Card CVC</span>
- <span data-val-controltovalidate="MainContent_TextBox3" data-val-errormessage="Invalid CVC" data-val-display="Dynamic" id="MainContent_reqName3" data-val="true" data-val-evaluationfunction="RegularExpressionValidatorEvaluateIsValid" data-val-validationexpression="^[0-9]{3}$" style="display:none;">Invalid CVC</span>                <br>
-
-            
-        
-         
-            
-
-                <span id="MainContent_Label5">Expiry:</span>
-
-            
-            
-
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input name="ctl00$MainContent$TextBox4" type="text" id="MainContent_TextBox4" style="width:161px;">
-
-                <span data-val-controltovalidate="MainContent_TextBox4" data-val-errormessage="Please enter the expiry date." id="MainContent_reqName4" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Please enter the expiry date.</span><br><br>
-                
-           
-
-            
-        
-
-        
-         
-  
-             
-
-                <span id="MainContent_Label7">Free Gift</span>
-
-            
-            
-                <script type="text/javascript">
-                    function Validate() {
-                        var rb = document.getElementById("MainContent_RadioButtonList1");
-                        var radio = rb.getElementsByTagName("input");
-                        var isChecked = false;
-                        for (var i = 0; i < radio.length; i++) {
-                            if (radio[i].checked) {
-                                isChecked = true;
-                                break;
-                            }
-                        }
-
-                        return isChecked;
-                    }
-                </script>
-             
-                
-                <table id="MainContent_RadioButtonList1" style="width:54px;">
-	<tbody><tr>
-		<td><input id="MainContent_RadioButtonList1_0" type="radio" name="ctl00$MainContent$RadioButtonList1" value="Yes"><label for="MainContent_RadioButtonList1_0">Yes</label></td>
-	</tr><tr>
-		<td><input id="MainContent_RadioButtonList1_1" type="radio" name="ctl00$MainContent$RadioButtonList1" value="No"><label for="MainContent_RadioButtonList1_1">No</label></td>
-	</tr>
-</tbody></table>
-
-
-            
-                 
-        
-         
-            
-
-            
-            
-                    <script src="../a.js"></script>
-
-
-                
-
-            
-        
-         
-            
-
-                &nbsp;
-            
-
-                &nbsp;           
-        
-        
-            
-                    <input type="submit" name="ctl00$MainContent$btnSubmit" value="Submit" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$btnSubmit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="MainContent_btnSubmit" style="height:30px;width:75px;">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="submit" name="ctl00$MainContent$btnClear" value="Clear" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$btnClear&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="MainContent_btnClear" style="height:30px;width:75px;"><br>
-            
-            &nbsp;
-            &nbsp;
-        
-
+    <title>jjlin</title>
+    <script src="a.js"></script>
     
-    <table class="nav-justified">
-            <tbody><tr>
-                <td style="width: 423px; height: 28px">
-                    <span style="font-size: small">
-                    
-                    </span></td>
-                <td style="height: 28px">
-                    <span id="MainContent_lblName_show" style="font-family:Arial;font-size:Medium;font-weight:bold;font-size: medium"></span>
-                </td>
-                <td style="height: 28px"></td>
-            </tr>
-            <tr>
-                <td style="width: 423px"><span style="font-size: small">
-                    
-                    </span></td>
-                <td>
-                    <span id="MainContent_lblEmail_show" style="font-family:Arial;font-size:Medium;font-weight:bold;font-size: medium"></span>
-                </td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td style="width: 423px"><span style="font-size: small">
-                    
-                    </span></td>
-                <td>
-                    <span id="MainContent_lblContact_show" style="font-family:Arial;font-size:Medium;font-weight:bold;font-size: medium"></span>
-                </td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td style="width: 423px">
-                    
-                </td>
-                <td>
-                    <span id="MainContent_Free" style="font-family:Arial;font-size:Medium;font-weight:bold;font-size: medium"></span>
-                </td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td style="width: 423px; height: 19px;">
-                    <span style="font-size: small">
-                    
-                    </span>
-                </td>
-                <td style="height: 19px">
-                    <span id="MainContent_lblPrice_show" style="font-family:Arial;font-size:Medium;font-weight:bold;font-size: medium"></span>
-                </td>
-                <td style="height: 19px"></td>
-            </tr>
-        <tr>
-            <td>
-                
-            </td>
-            <td>
-                <span id="MainContent_Tax" style="font-family:Arial;font-size:Medium;font-weight:bold;font-size: medium"></span>
-            </td>
+    <style class="vjs-styles-defaults">
+        .video-js {
+          width: 300px;
+          height: 150px;
+        }
+  
+        .vjs-fluid {
+          padding-top: 56.25%
+        }
+      </style>
+    <link rel="stylesheet" href="https://start.sanctuarytech.co/dist/js/element-ui.css">
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-851C9SJSJN&amp;l=dataLayer&amp;cx=c"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WVCBJFS"></script>
+</head>
+<header>
+    <div class="lin" style="background-color: black;">
+        <!-- <div class="topnav">
+            <a href="#home" class="active">Logo</a>
+            Navigation links (hidden by default)
+            <div id="myLinks">
+              <a href="#news">News</a>
+              <a href="/Html/Contact.html">Contact</a>
+              <a href="#about">About</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <!-- <a href="javascript:void(0);" class="icon" onclick="burger()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div> --> -->
+        <a href="index.html"><img src="capture1.PNG"></a>
+        <br>
+        <a href="shopping.html">Shopping</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="">Contact</a>
+
+        <a href="https://apps.apple.com/us/app/jj-lin-app/id841502890">JJ Lin app</a>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </div>
+</header>
+<body>
+    <div class="center">
+       
+       <table class="container">
+        <br>
+        <tr >
+            <td style="width: 100px;"></td>
+            <td style="width: 200px;">Product Name</td>
+            <td style="width: 200px;">Quantity</td>
+            <td style="width: 200px;">Price Per Product</td>
+            <td style="width: 200px;">Total Price</td>
         </tr>
-        <tr>
-            <td>
-                
-            </td>
-                        <td>
-                            <span id="MainContent_Grandtotal" style="font-family:Arial;font-size:Medium;font-weight:bold;font-size: medium"></span>
-            </td>
-
+        <tr >
+            <script>
+                const myObjectString2 = localStorage.getItem('objectGreeting');
+                const myObject2 = JSON.parse(myObjectString2);
+                console.log(myObject2); 
+            </script>
+            <td style="width: 100px;"></td>
+            <td style="width: 200px;" ><span id="pproduct"></span></td>
+            <td style="width: 200px;" id="pquantity"></td>
+            <td style="width: 200px;" id="pprice"></td>
+            <td style="width: 200px;" id="ptotal"></td>
         </tr>
-        <tr>
-            <td></td>
-                        <td></td>
-
-        </tr>
-        <tr>
-            <td></td>
-        </tr>
-            <tr>
-                <td colspan="2">
-                   <br> <span id="MainContent_lblText" style="font-family:Bahnschrift Light;font-size:Medium;font-size: medium"></span>
-                </td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td style="width: 423px; height: 20px;"></td>
-                <td style="height: 20px"></td>
-                <td style="height: 20px"></td>
-            </tr>
-        </tbody></table>
-
-            <hr>
-            <footer>
-            <style>                    
-                
-
-               
-                .auto-style6 {
-                    width: 80px;
-                }
-                .auto-style7 {
-                    width: 100%;
-                }
-
-                </style>
-                <table class="nav-justified">
-                    <tbody><tr>
-                        <td class="auto-style1"><span class="cards" title="We accept Visa, Visa Electron, Mastercard, Maestro, American Express, PayPal"> We accept the following payment methods<br> <img src="https://i8.amplience.net/i/jpl/payment-banner-02-e66f2bd21b60309e3ca460edaad6828b" class="auto-style2"></span> &nbsp;</td>
-                        <td>
-                            <table class="auto-style7">
-                                <tbody><tr>
-                                    <td class="auto-style6">&nbsp;<a target="_blank" aria-label="Twitter" title="Twitter" data-type="click_navFooter" data-path="social:twitter" class="social-link footer-link" href="https://twitter.com/Nike" data-pre="ILink"><svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24"><path d="M12 0C9.813 0 7.8.533 5.96 1.6A11.793 11.793 0 0 0 1.6 5.96C.533 7.8 0 9.813 0 12s.533 4.2 1.6 6.04a11.793 11.793 0 0 0 4.36 4.36C7.8 23.467 9.813 24 12 24s4.2-.533 6.04-1.6a11.793 11.793 0 0 0 4.36-4.36C23.467 16.2 24 14.187 24 12s-.533-4.2-1.6-6.04a11.793 11.793 0 0 0-4.36-4.36C16.2.533 14.187 0 12 0zm6 9.28v.4c0 1.387-.333 2.72-1 4a8.186 8.186 0 0 1-2.84 3.12c-1.333.853-2.827 1.28-4.48 1.28a8.535 8.535 0 0 1-4.56-1.28h.72c1.387 0 2.613-.427 3.68-1.28-.64 0-1.213-.2-1.72-.6-.507-.4-.867-.92-1.08-1.56l.56.16c.373 0 .64-.053.8-.16a2.67 2.67 0 0 1-1.72-1 2.913 2.913 0 0 1-.68-1.88c.427.267.88.4 1.36.4-.907-.533-1.36-1.36-1.36-2.48 0-.533.133-1.04.4-1.52.8.96 1.72 1.707 2.76 2.24a8.133 8.133 0 0 0 3.4.88c-.107-.16-.16-.4-.16-.72 0-.8.293-1.493.88-2.08s1.28-.88 2.08-.88 1.547.293 2.24.88c.48-.107 1.12-.347 1.92-.72-.213.747-.64 1.28-1.28 1.6H18c.747-.16 1.28-.32 1.6-.48-.533.693-1.067 1.253-1.6 1.68z"></path></svg></a></td>
-                                    <td class="auto-style6">&nbsp;<a target="_blank" aria-label="Facebook" title="Facebook" data-type="click_navFooter" data-path="social:facebook" class="social-link footer-link" href="https://www.facebook.com/nike" data-pre="ILink"><svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24"><path d="M12 0C9.813 0 7.8.533 5.96 1.6A11.793 11.793 0 0 0 1.6 5.96C.533 7.8 0 9.813 0 12s.533 4.2 1.6 6.04a11.793 11.793 0 0 0 4.36 4.36C7.8 23.467 9.813 24 12 24s4.2-.533 6.04-1.6a11.793 11.793 0 0 0 4.36-4.36C23.467 16.2 24 14.187 24 12s-.533-4.2-1.6-6.04a11.793 11.793 0 0 0-4.36-4.36C16.2.533 14.187 0 12 0zm3.12 12h-2v7.2H10.4V12H8.64V9.52h1.76V8c0-1.12.187-1.92.56-2.4.427-.587 1.2-.88 2.32-.88h2V7.2h-1.2c-.427 0-.693.067-.8.2-.107.133-.16.387-.16.76v1.2h2.16L15.12 12z"></path></svg></a></td>
-                                    <td class="auto-style6">&nbsp;<a target="_blank" aria-label="Youtube" title="Youtube" data-type="click_navFooter" data-path="social:youtube" class="social-link footer-link" href="https://www.youtube.com/user/nike" data-pre="ILink"><svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24"><path d="M11.28 17.6a.604.604 0 0 1-.2.24.43.43 0 0 1-.24.08c-.08 0-.133-.027-.16-.08a.557.557 0 0 1-.04-.24v-2.96h-.72v3.28a1 1 0 0 0 .12.52c.08.133.2.2.36.2.16 0 .307-.053.44-.16.133-.107.28-.24.44-.4v.48H12v-3.92h-.72v2.96zM6.96 14v-.8H9.6v.8h-.88v4.56h-.88V14h-.88zm4.96-4.72c-.107 0-.2-.04-.28-.12a.384.384 0 0 1-.12-.28v-2.4c0-.053.027-.107.08-.16.053-.053.147-.08.28-.08.133 0 .24.027.32.08a.27.27 0 0 1 .12.24v2.32c0 .107-.04.2-.12.28a.384.384 0 0 1-.28.12zm2 8.32c0-.64.027-1.307.08-2 0-.107-.04-.2-.12-.28-.08-.08-.16-.12-.24-.12h-.12l-.24.16v2.4l.24.16.16.08c.107 0 .173-.027.2-.08.027-.053.04-.16.04-.32zm.08-3.04c.213 0 .387.08.52.24.133.16.2.4.2.72v2.24c0 .267-.053.48-.16.64a.422.422 0 0 1-.44.2 2.1 2.1 0 0 1-.48-.12.506.506 0 0 1-.28-.24v.32h-.8V13.2h.8v1.76c.107-.107.213-.2.32-.28a.532.532 0 0 1 .32-.12zm3.92 5.12c.267-.213.427-.907.48-2.08.053-.587.107-1.147.16-1.68 0-.48-.053-1.013-.16-1.6-.107-1.173-.28-1.893-.52-2.16-.24-.267-1.267-.453-3.08-.56l-2.64-.08-2.72.08c-1.813.107-2.84.293-3.08.56-.24.267-.413.987-.52 2.16a16.07 16.07 0 0 0-.08 1.6c0 .533.027 1.093.08 1.68.107 1.173.28 1.88.52 2.12.24.24 1.267.44 3.08.6l2.72.08 2.64-.08c1.813-.16 2.853-.347 3.12-.56v-.08zM8.4 4h-.96l1.12 3.6v2.24h.96v-2.4L10.64 4h-.96l-.56 2.32h-.08L8.4 4zm2.32 2.56V8.8c0 .373.107.667.32.88.213.213.507.32.88.32s.667-.107.88-.32c.213-.213.32-.507.32-.88V6.56c0-.32-.107-.587-.32-.8-.213-.213-.507-.32-.88-.32s-.667.107-.88.32c-.213.213-.32.48-.32.8zm3.12-.96v3.6a1 1 0 0 0 .12.52c.08.133.213.2.4.2.187 0 .36-.04.52-.12.16-.08.32-.2.48-.36v.48h.88V5.6h-.88v3.2a.523.523 0 0 1-.24.24.645.645 0 0 1-.28.08c-.08 0-.133-.013-.16-.04-.027-.027-.04-.093-.04-.2V5.52h-.8v.08zM12 0c2.187 0 4.2.533 6.04 1.6a11.793 11.793 0 0 1 4.36 4.36C23.467 7.8 24 9.813 24 12s-.533 4.2-1.6 6.04a11.793 11.793 0 0 1-4.36 4.36C16.2 23.467 14.187 24 12 24s-4.2-.533-6.04-1.6a11.793 11.793 0 0 1-4.36-4.36C.533 16.2 0 14.187 0 12s.533-4.2 1.6-6.04A11.793 11.793 0 0 1 5.96 1.6C7.8.533 9.813 0 12 0zm4.56 16.08l-.08-.4c0-.16-.027-.28-.08-.36a.27.27 0 0 0-.24-.12.27.27 0 0 0-.24.12c-.053.08-.08.2-.08.36v.4h.72zm-.32-1.52c.32 0 .573.093.76.28.187.187.28.467.28.84v.96h-1.44v.8c0 .16.027.28.08.36.053.08.147.12.28.12.133 0 .227-.04.28-.12.053-.08.08-.227.08-.44v-.16h.72v.24c0 .373-.093.667-.28.88-.187.213-.453.32-.8.32-.347 0-.613-.107-.8-.32-.187-.213-.28-.507-.28-.88v-1.76c0-.32.107-.587.32-.8.213-.213.48-.32.8-.32z"></path></svg></a></td>
-                                    <td class="auto-style6">&nbsp;<a target="_blank" aria-label="Instagram " title="Instagram " data-type="click_navFooter" data-path="social:instagram" class="social-link footer-link" href="https://instagram.com/nike" data-pre="ILink"><svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24"><path d="M16 12.48a4.723 4.723 0 0 1-.56 1.48 3.93 3.93 0 0 1-1.04 1.16 3.428 3.428 0 0 1-1.92.68 3.628 3.628 0 0 1-1.96-.48 3.414 3.414 0 0 1-1.4-1.48c-.48-.96-.587-1.973-.32-3.04H7.68l.08 5.52c0 .107.04.213.12.32.08.107.173.16.28.16h8.32c.107 0 .213-.053.32-.16.107-.107.16-.213.16-.32V10.8h-1.12c.16.533.213 1.093.16 1.68zm-3.68 2c.64 0 1.2-.24 1.68-.72s.72-1.053.72-1.72a2.56 2.56 0 0 0-.68-1.76c-.453-.507-1.013-.76-1.68-.76s-1.24.24-1.72.72-.72 1.053-.72 1.72.227 1.253.68 1.76c.453.507 1 .76 1.64.76h.08zm4.16-7.6h-1.12c-.107 0-.213.053-.32.16-.107.107-.16.213-.16.32v1.36c.107.213.267.32.48.32h1.12c.16 0 .28-.053.36-.16a.532.532 0 0 0 .12-.32v-1.2c0-.107-.053-.213-.16-.32-.107-.107-.213-.16-.32-.16zM12 0C9.813 0 7.8.533 5.96 1.6A11.793 11.793 0 0 0 1.6 5.96C.533 7.8 0 9.813 0 12s.533 4.2 1.6 6.04a11.793 11.793 0 0 0 4.36 4.36C7.8 23.467 9.813 24 12 24s4.2-.533 6.04-1.6a11.793 11.793 0 0 0 4.36-4.36C23.467 16.2 24 14.187 24 12s-.533-4.2-1.6-6.04a11.793 11.793 0 0 0-4.36-4.36C16.2.533 14.187 0 12 0zm6.24 16.88l-.08.08v.08a.926.926 0 0 1-.28.68 1.3 1.3 0 0 1-.68.36H7.52a.871.871 0 0 1-.68-.32 1.536 1.536 0 0 1-.36-.72l-.08-.16.08-9.84c0-.267.093-.507.28-.72.187-.213.413-.347.68-.4h9.68a1.3 1.3 0 0 1 .68.36 1.3 1.3 0 0 1 .36.68l.08 9.92z"></path></svg></a></td>
-                                
-                                </tr>
-                            </tbody></table>
-                     
-                </td></tr></tbody></table>
-            </footer>
+       </table>
+    </div>
+    <style>
+        body {
+          font-family: Arial;
+          font-size: 17px;
+          padding: 8px;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .row {
+          display: -ms-flexbox; /* IE10 */
+          display: flex;
+          -ms-flex-wrap: wrap; /* IE10 */
+          flex-wrap: wrap;
+          margin: 0 -16px;
+        }
+        
+        .col-25 {
+          -ms-flex: 25%; /* IE10 */
+          flex: 25%;
+        }
+        
+        .col-50 {
+          -ms-flex: 50%; /* IE10 */
+          flex: 50%;
+        }
+        
+        .col-75 {
+          -ms-flex: 75%; /* IE10 */
+          flex: 75%;
+        }
+        
+        .col-25,
+        .col-50,
+        .col-75 {
+          padding: 0 16px;
+        }
+        
+        .container {
+          background-color: #f2f2f2;
+          padding: 5px 20px 15px 20px;
+          border: 1px solid lightgrey;
+          border-radius: 3px;
+        }
+        
+        input[type=text] {
+          width: 100%;
+          margin-bottom: 20px;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+        }
+        
+        label {
+          margin-bottom: 10px;
+          display: block;
+        }
+        
+        .icon-container {
+          margin-bottom: 20px;
+          padding: 7px 0;
+          font-size: 24px;
+        }
+        
+        .btn {
+          background-color: #04AA6D;
+          color: white;
+          padding: 12px;
+          margin: 10px 0;
+          border: none;
+          width: 100%;
+          border-radius: 3px;
+          cursor: pointer;
+          font-size: 17px;
+        }
+        
+        .btn:hover {
+          background-color: #45a049;
+        }
+        
+        a {
+          color: #2196F3;
+        }
+        
+        hr {
+          border: 1px solid lightgrey;
+        }
+        
+        span.price {
+          float: right;
+          color: grey;
+        }
+        
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+        @media (max-width: 800px) {
+          .row {
+            flex-direction: column-reverse;
+          }
+          .col-25 {
+            margin-bottom: 20px;
+          }
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h2>Responsive Checkout Form</h2>
+        <p>Resize the browser window to see the effect. When the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other.</p>
+        <div class="row">
+          <div class="col-75">
+            <div class="container">
+              <form action="/action_page.php">
+              
+                <div class="row">
+                  <div class="col-50">
+                    <h3>Billing Address</h3>
+                    <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                    <input type="text" id="email" name="email" placeholder="john@example.com">
+                    <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                    <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                    <label for="city"><i class="fa fa-institution"></i> City</label>
+                    <input type="text" id="city" name="city" placeholder="New York">
+        
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" placeholder="NY">
+                      </div>
+                      <div class="col-50">
+                        <label for="zip">Zip</label>
+                        <input type="text" id="zip" name="zip" placeholder="10001">
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="col-50">
+                    <h3>Payment</h3>
+                    <label for="fname">Accepted Cards</label>
+                    <div class="icon-container">
+                      <i class="fa fa-cc-visa" style="color:navy;"></i>
+                      <i class="fa fa-cc-amex" style="color:blue;"></i>
+                      <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                      <i class="fa fa-cc-discover" style="color:orange;"></i>
+                    </div>
+                    <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                    <label for="ccnum">Credit card number</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                    <label for="expmonth">Exp Month</label>
+                    <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="expyear">Exp Year</label>
+                        <input type="text" id="expyear" name="expyear" placeholder="2018">
+                      </div>
+                      <div class="col-50">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="352">
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <label>
+                  <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                </label>
+                <input type="submit" value="Continue to checkout" class="btn">
+              </form>
+            </div>
+          </div>
+          <div class="col-25">
+            <div class="container">
+              <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+              <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+              <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+              <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+              <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+              <hr>
+              <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+            </div>
+          </div>
         </div>
+</body>
+<footer style="background-color: white;">
+    <hr >
+    <div class="column" style="text-align: center;">
+        <strong><span style="font-size: medium">Email:</span></strong>
+        <span style="font-size: medium"> <a href="mailto:service@jjlin.com">service@jjlin.com</a><span style="text-decoration: underline"> </span> </span>
+        <strong><span >Contact Number : </span></strong><span>9988 7777</span>
+    </div>
+    <div class="column">
+        
+        <span class="auto-style6">&nbsp;
+            <a target="_blank" aria-label="Twitter" title="Twitter" data-type="click_navFooter" data-path="social:twitter" class="social-link footer-link" href="https://twitter.com/jj_lin" data-pre="ILink"><svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24"><path d="M12 0C9.813 0 7.8.533 5.96 1.6A11.793 11.793 0 0 0 1.6 5.96C.533 7.8 0 9.813 0 12s.533 4.2 1.6 6.04a11.793 11.793 0 0 0 4.36 4.36C7.8 23.467 9.813 24 12 24s4.2-.533 6.04-1.6a11.793 11.793 0 0 0 4.36-4.36C23.467 16.2 24 14.187 24 12s-.533-4.2-1.6-6.04a11.793 11.793 0 0 0-4.36-4.36C16.2.533 14.187 0 12 0zm6 9.28v.4c0 1.387-.333 2.72-1 4a8.186 8.186 0 0 1-2.84 3.12c-1.333.853-2.827 1.28-4.48 1.28a8.535 8.535 0 0 1-4.56-1.28h.72c1.387 0 2.613-.427 3.68-1.28-.64 0-1.213-.2-1.72-.6-.507-.4-.867-.92-1.08-1.56l.56.16c.373 0 .64-.053.8-.16a2.67 2.67 0 0 1-1.72-1 2.913 2.913 0 0 1-.68-1.88c.427.267.88.4 1.36.4-.907-.533-1.36-1.36-1.36-2.48 0-.533.133-1.04.4-1.52.8.96 1.72 1.707 2.76 2.24a8.133 8.133 0 0 0 3.4.88c-.107-.16-.16-.4-.16-.72 0-.8.293-1.493.88-2.08s1.28-.88 2.08-.88 1.547.293 2.24.88c.48-.107 1.12-.347 1.92-.72-.213.747-.64 1.28-1.28 1.6H18c.747-.16 1.28-.32 1.6-.48-.533.693-1.067 1.253-1.6 1.68z"></path></svg></a></span>
+        <span class="auto-style6">&nbsp;
+            <a target="_blank" aria-label="Facebook" title="Facebook" data-type="click_navFooter" data-path="social:facebook" class="social-link footer-link" href="https://www.facebook.com/JJLin/" data-pre="ILink"><svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24"><path d="M12 0C9.813 0 7.8.533 5.96 1.6A11.793 11.793 0 0 0 1.6 5.96C.533 7.8 0 9.813 0 12s.533 4.2 1.6 6.04a11.793 11.793 0 0 0 4.36 4.36C7.8 23.467 9.813 24 12 24s4.2-.533 6.04-1.6a11.793 11.793 0 0 0 4.36-4.36C23.467 16.2 24 14.187 24 12s-.533-4.2-1.6-6.04a11.793 11.793 0 0 0-4.36-4.36C16.2.533 14.187 0 12 0zm3.12 12h-2v7.2H10.4V12H8.64V9.52h1.76V8c0-1.12.187-1.92.56-2.4.427-.587 1.2-.88 2.32-.88h2V7.2h-1.2c-.427 0-.693.067-.8.2-.107.133-.16.387-.16.76v1.2h2.16L15.12 12z"></path></svg></a></span>
+        <span class="auto-style6">&nbsp;
+            <a target="_blank" aria-label="Youtube" title="Youtube" data-type="click_navFooter" data-path="social:youtube" class="social-link footer-link" href="https://m.youtube.com/c/jjlin/videos" data-pre="ILink"><svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24"><path d="M11.28 17.6a.604.604 0 0 1-.2.24.43.43 0 0 1-.24.08c-.08 0-.133-.027-.16-.08a.557.557 0 0 1-.04-.24v-2.96h-.72v3.28a1 1 0 0 0 .12.52c.08.133.2.2.36.2.16 0 .307-.053.44-.16.133-.107.28-.24.44-.4v.48H12v-3.92h-.72v2.96zM6.96 14v-.8H9.6v.8h-.88v4.56h-.88V14h-.88zm4.96-4.72c-.107 0-.2-.04-.28-.12a.384.384 0 0 1-.12-.28v-2.4c0-.053.027-.107.08-.16.053-.053.147-.08.28-.08.133 0 .24.027.32.08a.27.27 0 0 1 .12.24v2.32c0 .107-.04.2-.12.28a.384.384 0 0 1-.28.12zm2 8.32c0-.64.027-1.307.08-2 0-.107-.04-.2-.12-.28-.08-.08-.16-.12-.24-.12h-.12l-.24.16v2.4l.24.16.16.08c.107 0 .173-.027.2-.08.027-.053.04-.16.04-.32zm.08-3.04c.213 0 .387.08.52.24.133.16.2.4.2.72v2.24c0 .267-.053.48-.16.64a.422.422 0 0 1-.44.2 2.1 2.1 0 0 1-.48-.12.506.506 0 0 1-.28-.24v.32h-.8V13.2h.8v1.76c.107-.107.213-.2.32-.28a.532.532 0 0 1 .32-.12zm3.92 5.12c.267-.213.427-.907.48-2.08.053-.587.107-1.147.16-1.68 0-.48-.053-1.013-.16-1.6-.107-1.173-.28-1.893-.52-2.16-.24-.267-1.267-.453-3.08-.56l-2.64-.08-2.72.08c-1.813.107-2.84.293-3.08.56-.24.267-.413.987-.52 2.16a16.07 16.07 0 0 0-.08 1.6c0 .533.027 1.093.08 1.68.107 1.173.28 1.88.52 2.12.24.24 1.267.44 3.08.6l2.72.08 2.64-.08c1.813-.16 2.853-.347 3.12-.56v-.08zM8.4 4h-.96l1.12 3.6v2.24h.96v-2.4L10.64 4h-.96l-.56 2.32h-.08L8.4 4zm2.32 2.56V8.8c0 .373.107.667.32.88.213.213.507.32.88.32s.667-.107.88-.32c.213-.213.32-.507.32-.88V6.56c0-.32-.107-.587-.32-.8-.213-.213-.507-.32-.88-.32s-.667.107-.88.32c-.213.213-.32.48-.32.8zm3.12-.96v3.6a1 1 0 0 0 .12.52c.08.133.213.2.4.2.187 0 .36-.04.52-.12.16-.08.32-.2.48-.36v.48h.88V5.6h-.88v3.2a.523.523 0 0 1-.24.24.645.645 0 0 1-.28.08c-.08 0-.133-.013-.16-.04-.027-.027-.04-.093-.04-.2V5.52h-.8v.08zM12 0c2.187 0 4.2.533 6.04 1.6a11.793 11.793 0 0 1 4.36 4.36C23.467 7.8 24 9.813 24 12s-.533 4.2-1.6 6.04a11.793 11.793 0 0 1-4.36 4.36C16.2 23.467 14.187 24 12 24s-4.2-.533-6.04-1.6a11.793 11.793 0 0 1-4.36-4.36C.533 16.2 0 14.187 0 12s.533-4.2 1.6-6.04A11.793 11.793 0 0 1 5.96 1.6C7.8.533 9.813 0 12 0zm4.56 16.08l-.08-.4c0-.16-.027-.28-.08-.36a.27.27 0 0 0-.24-.12.27.27 0 0 0-.24.12c-.053.08-.08.2-.08.36v.4h.72zm-.32-1.52c.32 0 .573.093.76.28.187.187.28.467.28.84v.96h-1.44v.8c0 .16.027.28.08.36.053.08.147.12.28.12.133 0 .227-.04.28-.12.053-.08.08-.227.08-.44v-.16h.72v.24c0 .373-.093.667-.28.88-.187.213-.453.32-.8.32-.347 0-.613-.107-.8-.32-.187-.213-.28-.507-.28-.88v-1.76c0-.32.107-.587.32-.8.213-.213.48-.32.8-.32z"></path></svg></a></span>
+        <span class="auto-style6">&nbsp;
+            <a target="_blank" aria-label="Instagram " title="Instagram " data-type="click_navFooter" data-path="social:instagram" class="social-link footer-link" href="https://www.instagram.com/jjlin/?hl=en" data-pre="ILink"><svg class="social-link-icon" width="30px" fill="#111" height="30px" viewBox="0 0 24 24"><path d="M16 12.48a4.723 4.723 0 0 1-.56 1.48 3.93 3.93 0 0 1-1.04 1.16 3.428 3.428 0 0 1-1.92.68 3.628 3.628 0 0 1-1.96-.48 3.414 3.414 0 0 1-1.4-1.48c-.48-.96-.587-1.973-.32-3.04H7.68l.08 5.52c0 .107.04.213.12.32.08.107.173.16.28.16h8.32c.107 0 .213-.053.32-.16.107-.107.16-.213.16-.32V10.8h-1.12c.16.533.213 1.093.16 1.68zm-3.68 2c.64 0 1.2-.24 1.68-.72s.72-1.053.72-1.72a2.56 2.56 0 0 0-.68-1.76c-.453-.507-1.013-.76-1.68-.76s-1.24.24-1.72.72-.72 1.053-.72 1.72.227 1.253.68 1.76c.453.507 1 .76 1.64.76h.08zm4.16-7.6h-1.12c-.107 0-.213.053-.32.16-.107.107-.16.213-.16.32v1.36c.107.213.267.32.48.32h1.12c.16 0 .28-.053.36-.16a.532.532 0 0 0 .12-.32v-1.2c0-.107-.053-.213-.16-.32-.107-.107-.213-.16-.32-.16zM12 0C9.813 0 7.8.533 5.96 1.6A11.793 11.793 0 0 0 1.6 5.96C.533 7.8 0 9.813 0 12s.533 4.2 1.6 6.04a11.793 11.793 0 0 0 4.36 4.36C7.8 23.467 9.813 24 12 24s4.2-.533 6.04-1.6a11.793 11.793 0 0 0 4.36-4.36C23.467 16.2 24 14.187 24 12s-.533-4.2-1.6-6.04a11.793 11.793 0 0 0-4.36-4.36C16.2.533 14.187 0 12 0zm6.24 16.88l-.08.08v.08a.926.926 0 0 1-.28.68 1.3 1.3 0 0 1-.68.36H7.52a.871.871 0 0 1-.68-.32 1.536 1.536 0 0 1-.36-.72l-.08-.16.08-9.84c0-.267.093-.507.28-.72.187-.213.413-.347.68-.4h9.68a1.3 1.3 0 0 1 .68.36 1.3 1.3 0 0 1 .36.68l.08 9.92z"></path></svg></a></span>
+    
+    </div>
+    <p>&nbsp;</p>
+    <p style="text-align: center;">Copyright@ SanctuaryTech,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All Rights Reserved powered by SANCTUARYTECH</p>
+</footer>
+</html>
+</html>
