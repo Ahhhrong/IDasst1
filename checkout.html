@@ -53,7 +53,7 @@
     </div>
 </header>
 <body>
-    <div class="center">
+    <!-- <div class="center">
        
        <table class="container">
         <br>
@@ -65,13 +65,7 @@
             <td style="width: 200px;">Total Price</td>
         </tr>
         <tr >
-            <script type="text/javascript">
-                window.onload=function(){what()}
-                function what(){
-                document.getElementById("pproduct").innerHTML=localStorage.getItem("product1")
-                document.getElementById("pprice").innerHTML=localStorage.getItem("price1")
-
-                }
+            
             </script>
             <p id="demo"></p>
             <td style="width: 100px;"></td>
@@ -81,7 +75,7 @@
             <td style="width: 200px;" id="ptotal"></td>
         </tr>
        </table>
-    </div>
+    </div> -->
     <style>
         body {
           font-family: Arial;
@@ -255,18 +249,49 @@
           </div>
           <div class="col-25">
             <div class="container">
-              <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
-              <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-              <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-              <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-              <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+              <script type="text/javascript">
+                window.onload=function(){what()}
+                function what(){
+                document.getElementById("product1").innerHTML=localStorage.getItem("product1")
+                var a = document.getElementById("price1").innerHTML= localStorage.getItem("price1")
+                document.getElementById("product2").innerHTML=localStorage.getItem("product2")
+                var b =document.getElementById("price2").innerHTML=localStorage.getItem("price2")
+                document.getElementById("product3").innerHTML=localStorage.getItem("product3")
+                var c = document.getElementById("price3").innerHTML=(localStorage.getItem("price3"))
+                var d = 0
+                if (a !=null)
+                {
+                  d+=parseInt(a)
+                }
+                if (b !=null)
+                {
+                  d+=parseInt(b)
+                }
+                if (c !=null)
+                {
+                  d+= parseInt(c)
+                }
+                document.getElementById("ttotal").innerHTML=d
+                
+                }
+              </script>
+              <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b></b></span></h4>
+              <p><a href="#" id ="product1"></a> <span class="price" id ="price1"></span></p>
+              <p><a href="#" id ="product2"></a> <span class="price" id ="price2"></span></p>
+              <p><a href="#" id ="product3"></a> <span class="price" id ="price3"></span></p>
               <hr>
-              <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+              <p>Total <span class="price" style="color:black" id="ttotal" ><b>$30</b></span></p>
             </div>
           </div>
+   
         </div>
+        <br><br><br>       
+        
+
 </body>
 <footer style="background-color: white;">
+
+
     <hr >
     <div class="column" style="text-align: center;">
         <strong><span style="font-size: medium">Email:</span></strong>

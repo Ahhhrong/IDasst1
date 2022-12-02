@@ -69,44 +69,64 @@
   <table class="content__wrap">
     <td >
      <script type="text/javascript">
-      function addtocart(){
+      // jQuery(':button').click(function () {
+      //     if (this.id == 'button1') {
+      //       localStorage.setItem("product1",document.getElementById("product1").innerHTML)
+      //       localStorage.setItem("price1",document.getElementById("price1").innerHTML)        
+      //     }
+      //     if (this.id == 'button2') {
+      //       localStorage.setItem("product1",document.getElementById("product2").innerHTML)
+      //       localStorage.setItem("price1",document.getElementById("price2").innerHTML)
+      //     }
+      // });
+      
+        function product1(){
         localStorage.setItem("product1",document.getElementById("product1").innerHTML)
-        localStorage.setItem("price1",document.getElementById("price1").innerHTML)
-
-      }
+        localStorage.setItem("price1", document.getElementById("price1").innerHTML)
+        } ;
+        function product2(){
+        localStorage.setItem("product2",document.getElementById("product2").innerHTML)
+        localStorage.setItem("price2",document.getElementById("price2").innerHTML)
+        } ;
+        function product3(){
+        localStorage.setItem("product3",document.getElementById("product3").innerHTML)
+        localStorage.setItem("price3",document.getElementById("price3").innerHTML)
+        } ;
+        
+      
      </script>
       <div class="card" >
         <img src="product1.jpg" alt="Denim Jeans" style="width:100%">
             <h1 style="font-size: medium;" id="product1">10 Year Anniversary Tee</h1>
-            <p class="price" id="price1" >$39</p>
+            <p class="price" id="price1" >39</p>
             <p>Free sizing</p>
             <br>
             
-            <p><a href="checkout.html"><button type="button" style="color: white;text-decoration: none; " id="button1"   onclick="addtocart()" >Add to Cart</button></a></p>
+            <p><a href="checkout.html"><button type="button" style="color: white;text-decoration: none; " id="button1"   onclick="product1()" >Add to Cart</button></a></p>
           </div>
     </td>
     <td>
       <div class="card" style="margin-left: 50px;">
         <img src="Product2.png" alt="Denim Jeans" style="width:100%">
-            <h1 style="font-size: medium;" id="name2" >Bitcoin Token</h1>
-            <p class="price" id="price2" >$199</p>
+            <h1 style="font-size: medium;" id="product2" >Bitcoin Token</h1>
+            <p  id="price2" >199</p>
             <p ></p>
             <br>
             <br>
             <br>
-            <p><a href="checkout.html"><button type="button" style="color: white;text-decoration: none; " id="button1"   onclick="addtocart()" >Add to Cart</button></a></p>
+            <p><a href="checkout.html"><button type="button" style="color: white;text-decoration: none; " id="button2"   onclick="product2()" >Add to Cart</button></a></p>
           </div>
     </td>
     <td>
         <div class="card" style="margin-left: 50px;">
             <img src="product3.png" alt="Denim Jeans" style="width:100%">
-            <h1 style="font-size: medium;" id="name3">Limited Edition Recycled Straw </h1>
-            <p class="price" id="price3">$29</p>
+            <h1 style="font-size: medium;" id="product3">Limited Edition Recycled Straw </h1>
+            <p class="price" id="price3">29</p>
             <p></p>
             <br>
             <br>
             <br>
-            <p><a href="checkout.html"><button type="button" style="color: white;text-decoration: none; " id="button1"   >Add to Cart</button></a></p>
+            <p><a href="checkout.html"><button type="button" style="color: white;text-decoration: none; " id="button3"   onclick="product3()" >Add to Cart</button></a></p>
           </div>
           
     </td>
