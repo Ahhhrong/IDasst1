@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Normalize.css">
+
 <head>
 <style>
 * {
@@ -20,7 +23,7 @@
 
 .flex-item-right {
   padding: 10px;
-  flex: 50%;
+  flex: 70%;
 }
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
@@ -35,34 +38,35 @@
 
 
 <div class="flex-container">
-  <div class="flex-item-left">
-    <p style="width: 471px; height: 41px;"><strong><span style="color: #FF0000; font-size: x-large; ">Enquiry</span><span style="font-size: x-large; "> Form</span></strong></p>
-    <p style="height: 22px; width: 471px;">
-        <span>Name</span>
-        <input id="name"style="width:250px;"><span id="pname"></span>          
-    </p>
-    <p style="height: 22px; width: 471px;">
-        <span>Number</span>
-        <input id="number"style="width:250px;"><span id="pnumber"></span>          
-    </p>
-    <p style="height: 22px; width: 471px;">
-        <span>Email</span>
-        <input id="email"style="width:250px;"><span id="pemail"></span>          
-    </p>
-    <p style="height: 22px; width: 471px;">
-        <span>sms</span>
-        <input id="sms"style="Height:89px;Width:250px"><span id="psms"></span>
-          
-    </p>
-    <br>    
-    <p><button type="button" onclick="myFunction()">Submit</button></p>
+    <div style=" margin-left: auto; margin-right: auto; " >
+        <div class="flex-item-left">
+            <p style="width: 471px; height: 41px;"><strong><span style="color: #FF0000; font-size: x-large; ">Enquiry</span><span style="font-size: x-large; "> Form</span></strong></p>
+            <p style="height: 22px; width: 471px; margin-bottom: 30px;">
+                <span style="font-size:Medium;font-weight:bold;margin-left:30%">Name</span>
+                <input id="name"style="width:250px;height:30px;"><span id="pname"></span>          
+            </p>
+            <p style="height: 22px; width: 471px;margin-bottom: 30px;">
+                <span style="font-size:Medium;font-weight:bold;margin-left:30%">Number</span>
+                <input id="number"style="width:250px;height:30px"><span id="pnumber"></span>          
+            </p>
+            <p style="height: 22px; width: 471px;margin-bottom: 30px;">
+                <span style="font-size:Medium;font-weight:bold;margin-left:30%">Email</span>
+                <input id="email"style="width:250px;height:30px"><span id="pemail"></span>          
+            </p>
+            <p style="height: 22px; width: 471px;margin-bottom: 30px;">
+                <span style="font-size:Medium;font-weight:bold;margin-left:30%">Sms</span>
+                <input id="sms"style="Height:89px;Width:250px"><span id="psms"></span>
+                
+            </p>
+            <br>    
+            <p><button type="button" onclick="myFunction()">Submit</button></p>
 
-  </div>
+        </div>
+    </div>
 
 
 
-
-  <div class="flex-item-right">
+  <div class="flex-item-right" style="margin-right: 20%;" >
     <span style="font-size: medium"></span>
     
     <p>
