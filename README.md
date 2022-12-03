@@ -4,6 +4,16 @@ This website allows User to Purchase Merchants
 Essentially, this part is your sales pitch.
 
 Design Process
+This Website is for JJ Lin Fans to purchase Merchants,Know some info about him, Contacting his Agency Company.
+As a user you can go to contact page to submit a queries to JJ Lin company.
+as a user you cna go to shopping page to purchase JJ Lin Merchants.
+
+
+
+
+
+
+
 Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
 In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
