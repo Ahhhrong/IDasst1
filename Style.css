@@ -43,15 +43,7 @@ body{
   display: table;
   clear: both;
   }
-@media (max-width:576px) 
-{
-  .flex-container{
-    flex-wrap: wrap;
-  }
-  .flex-item{
-    flex-basis: 30%;
-   }
-  }
+
 
 .topnav {
   overflow: hidden;
@@ -107,13 +99,17 @@ body{
   text-align: center;
   font-family: arial;
   height: 500px;
+  margin-left: 50px;
 }
 
 .price {
   color: grey;
   font-size: 22px;
 }
-
+.image
+{
+  width:100%
+}
 .card button {
   border: none;
   outline: 0;
