@@ -1,5 +1,4 @@
 function myFunction() {
-    ValidateEmail()
     // Get the value of the input field with id="numb"
     let a = document.getElementById("name").value;
     let b = document.getElementById("number").value;
@@ -29,7 +28,15 @@ function myFunction() {
     {
         text2 =" "
     } 
-   
+    if (c.length==0) 
+    {
+        text3= "Please Enter Ur Message";
+
+    }
+    else
+    {
+        text3 =" "
+    }
     if (d.length==0) 
     {
         text4= "Please Enter Ur Message";
@@ -42,7 +49,8 @@ function myFunction() {
     document.getElementById("pname").innerHTML =text1;
     document.getElementById("pnumber").innerHTML =text2;
     document.getElementById("psms").innerHTML =text4;
-    
+    document.getElementById("pemail").innerHTML =text3;
+
 
 }
 function burger() {
