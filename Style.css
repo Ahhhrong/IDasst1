@@ -130,6 +130,10 @@ body{
 .footer{
   font-size: 15px;
   font-family:Arial;
+  bottom: 0;
+  width: 100%;
+  grid-area: footer;
+  position: fixed;
   }
 .footer1{
   margin-left: 45%;
