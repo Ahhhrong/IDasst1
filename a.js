@@ -1,4 +1,5 @@
 function myFunction() {
+    ValidateEmail()
     // Get the value of the input field with id="numb"
     let a = document.getElementById("name").value;
     let b = document.getElementById("number").value;
@@ -27,15 +28,9 @@ function myFunction() {
     else
     {
         text2 =" "
-    } if (c.length==0) 
-    {
-        text3= "Please Enter Email";
-
-    }
-    else
-    {
-        text3 =" "
-    } if (d.length==0) 
+    } 
+   
+    if (d.length==0) 
     {
         text4= "Please Enter Ur Message";
 
@@ -46,7 +41,6 @@ function myFunction() {
     }
     document.getElementById("pname").innerHTML =text1;
     document.getElementById("pnumber").innerHTML =text2;
-    document.getElementById("pemail").innerHTML =text3;
     document.getElementById("psms").innerHTML =text4;
     
 
@@ -84,4 +78,33 @@ function Validate() {
     }
 
     return isChecked;
+}
+function checkout1()
+{
+
+    let a1 = document.getElementById("fcname").value;
+    let a2 = document.getElementById("fcard").value;
+    let a3 = document.getElementById("fmonth").value;
+    let a4 = document.getElementById("fcvv").value;
+    let a5 = document.getElementById("fyear").value;
+    let a6 = document.getElementById("fname").value;
+    let a7 = document.getElementById("femail").value;
+    let a8 = document.getElementById("faddress").value;
+    let a9 = document.getElementById("fcity").value;
+    let a10 = document.getElementById("fzip").value;
+    let a11 = document.getElementById("fstate").value;
+    if (a6.length ==0||a7.length ==0||a8.length ==0||a9.length ==0||a10.length ==0||a11.length ==0)
+    {
+        alert( "Fill in Billing Address Details");
+
+    }
+    else if (a1.length ==0||a2.length ==0||a3.length ==0||a4.length ==0||a5.length ==0)
+    {
+        alert( "Fill in payment Details");
+
+
+    }
+    
+
+   
 }

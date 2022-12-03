@@ -1,0 +1,15 @@
+<html>
+<body>
+
+<h2>Get the current URL</h2>
+
+<p id="demo"></p>
+
+<script>
+    let firstname= new URLSearchParams(window.location.search).get("address");
+    document.getElementById("demo").innerHTML = firstname
+    
+</script>
+
+</body>
+</html>

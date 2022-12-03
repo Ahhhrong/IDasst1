@@ -41,12 +41,13 @@
               <i class="fa fa-bars"></i>
             </a>
         </div> --> -->
-        <div>
-        <a href="index.html"><img  src="capture1.PNG"></a>
+        <a href="index.html"><img  src="logo.png"></a>
+
+        <div class="center" style="width: 25%;">
         <br>
-        <a href="shopping.html">Shopping</a>
+        <a href="index.html">Home</a>
         <a href="checkout.html">Checkout</a>
-        <a href="">Contact</a>
+        <a href="Contact.html">Contact</a>
 
         <a href="https://apps.apple.com/us/app/jj-lin-app/id841502890">JJ Lin app</a>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -83,14 +84,20 @@
         function product1(){
         localStorage.setItem("product1",document.getElementById("product1").innerHTML)
         localStorage.setItem("price1", document.getElementById("price1").innerHTML)
+        localStorage.setItem("quantity1", document.getElementById("quantity1").value  )
+        
         } ;
         function product2(){
         localStorage.setItem("product2",document.getElementById("product2").innerHTML)
         localStorage.setItem("price2",document.getElementById("price2").innerHTML)
+        localStorage.setItem("quantity2", document.getElementById("quantity2").value  )
+
         } ;
         function product3(){
         localStorage.setItem("product3",document.getElementById("product3").innerHTML)
         localStorage.setItem("price3",document.getElementById("price3").innerHTML)
+        localStorage.setItem("quantity3", document.getElementById("quantity3").value  )
+
         } ;
         
       
@@ -98,8 +105,17 @@
       <div class="card" >
         <img src="product1.jpg" alt="Denim Jeans" style="width:100%">
             <h1 style="font-size: medium;" id="product1">10 Year Anniversary Tee</h1>
-            <p class="price" id="price1" >39</p>
+            <a>$</a><span  id="price1" >69</span>
             <p>Free sizing</p>
+            <br>
+            <select  id="quantity1">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+
+            </select>
             <br>
             
             <p><a href="checkout.html"><button type="button" style="color: white;text-decoration: none; " id="button1"   onclick="product1()" >Add to Cart</button></a></p>
@@ -109,11 +125,22 @@
       <div class="card" style="margin-left: 50px;">
         <img src="Product2.png" alt="Denim Jeans" style="width:100%">
             <h1 style="font-size: medium;" id="product2" >Bitcoin Token</h1>
-            <p  id="price2" >199</p>
-            <p ></p>
+            <a>$</a><span  id="price2" >199</span>
             <br>
             <br>
             <br>
+            <br>
+            <br>
+            <select  id="quantity2">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+
+            </select>
+            <br>
+
             <p><a href="checkout.html"><button type="button" style="color: white;text-decoration: none; " id="button2"   onclick="product2()" >Add to Cart</button></a></p>
           </div>
     </td>
@@ -121,11 +148,22 @@
         <div class="card" style="margin-left: 50px;">
             <img src="product3.png" alt="Denim Jeans" style="width:100%">
             <h1 style="font-size: medium;" id="product3">Limited Edition Recycled Straw </h1>
-            <p class="price" id="price3">29</p>
-            <p></p>
+            <a>$</a><span  id="price3" >199</span>
             <br>
             <br>
             <br>
+            <br>
+            <br>
+            <select  id="quantity3">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+
+            </select>
+
+
             <p><a href="checkout.html"><button type="button" style="color: white;text-decoration: none; " id="button3"   onclick="product3()" >Add to Cart</button></a></p>
           </div>
           
