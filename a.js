@@ -46,10 +46,10 @@ function myFunction() {
     {
         text4 =" "
     }
-    document.getElementById("pname").innerHTML =text1;
-    document.getElementById("pnumber").innerHTML =text2;
-    document.getElementById("psms").innerHTML =text4;
-    document.getElementById("pemail").innerHTML =text3;
+    document.getElementById("name").placeholder =text1;
+    document.getElementById("number").placeholder =text2;
+    document.getElementById("sms").placeholder =text4;
+    document.getElementById("email").placeholder =text3;
 
 
 }
@@ -101,6 +101,7 @@ function checkout1()
     let a9 = document.getElementById("fcity").value;
     let a10 = document.getElementById("fzip").value;
     let a11 = document.getElementById("fstate").value;
+  
     if (a6.length ==0||a7.length ==0||a8.length ==0||a9.length ==0||a10.length ==0||a11.length ==0)
     {
         alert( "Fill in Billing Address Details");

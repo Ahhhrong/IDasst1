@@ -22,16 +22,17 @@
         @media (max-width: 800px) {
           .card
           {
-            max-width: 200px;
-            height: 350px;
-            margin-left:0px
+            max-width: 100px;
+            height: 300px;
+            margin:0px;
+            margin-left: 0;
             
           
           }
           .center{
           width: 80%;
           font-size: xx-small;
-        
+          margin: 0%;
           }
           
         }
@@ -41,35 +42,22 @@
     <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
     <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WVCBJFS"></script>
   
-</head>
-<header style="width: 100%;background-color: black;">
-    <div class="lin" style="background-color: black;">
-        <!-- <div class="topnav">
-            <a href="#home" class="active">Logo</a>
-            Navigation links (hidden by default)
-            <div id="myLinks">
-              <a href="#news">News</a>
-              <a href="/Html/Contact.html">Contact</a>
-              <a href="#about">About</a>
-            </div>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <!-- <a href="javascript:void(0);" class="icon" onclick="burger()">
-              <i class="fa fa-bars"></i>
-            </a>
-        </div> --> -->
-        <a href="index.html"><img  src="logo.png"></a>
+</head><header style="width: 100%;background-color: black;">
+  <div style="background-color: white;width: 100%;"  >        <a href="index.html" class="center"><img class="center" src="logo1.png"></a>
+  </div>
+  <div class="lin" style="background-color: black;width: 100%;">
+      
+      <div class="center" style="width: 35%;" >
+      <br>
+      <strong style="font-size: medium;"><a href="shopping.html" >Shopping</a>
+      <a href="checkout.html">Checkout</a>
+      <a href="Contact.html">Contact</a>
 
-        <div class="center" style="width: 25%;">
-        <br>
-        <a href="index.html">Home</a>
-        <a href="checkout.html">Checkout</a>
-        <a href="Contact.html">Contact</a>
+      <a href="https://apps.apple.com/us/app/jj-lin-app/id841502890">JJ Lin app</a></strong>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      </div>
 
-        <a href="https://apps.apple.com/us/app/jj-lin-app/id841502890">JJ Lin app</a>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        </div>
-
-    </div>
+  </div>
 
 </header>
 <style>.content__wrap {
@@ -78,8 +66,28 @@
   min-height: calc(100vh - 300px);
   padding: 50px 0;
 }
-.slick-slider{position:relative;display:block;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}.slick-list{position:relative;display:block;overflow:hidden;margin:0;padding:0}.slick-list:focus{outline:none}.slick-list.dragging{cursor:pointer;cursor:hand}.slick-slider .slick-track,.slick-slider .slick-list{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.slick-track{position:relative;top:0;left:0;display:block;margin-left:auto;margin-right:auto}.slick-track:before,.slick-track:after{display:table;content:''}.slick-track:after{clear:both}.slick-loading .slick-track{visibility:hidden}.slick-slide{display:none;float:left;height:100%;min-height:1px}[dir="rtl"] .slick-slide{float:right}.slick-slide img{display:block}.slick-slide.slick-loading img{display:none}.slick-slide.dragging img{pointer-events:none}.slick-initialized .slick-slide{display:block}.slick-loading .slick-slide{visibility:hidden}.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}.slick-arrow.slick-hidden{display:none}
-
+      
+      @media (max-width: 800px) {
+        .center{
+          width: 80%;
+          font-size: x-small;
+          margin-left: auto;
+          margin-right: auto;
+        
+        }
+        .footer
+        {
+          font-size: xx-small;
+          flex-direction: column-reverse;
+          font-size: 9px;
+        }
+        .footer1
+        {
+          margin-left: 35%;
+        }
+      
+      
+    }
 </style>
  <body>
   
@@ -119,7 +127,7 @@
       
      </script>
       <div class="card" >
-        <img src="product1.jpg" alt="Denim Jeans" style="width:100%">
+        <img class= "image" src="product1.jpg" >
         <h1 class="center" style="font-size: medium;" id="product1" >Anniversary Tee</h1>
         <a>$</a><span  id="price1" >79</span>
         <br>
@@ -142,7 +150,7 @@
     </td>
     <td>
       <div class="card" >
-        <img class="image" src="Product2.png" alt="Denim Jeans" >
+        <img class="image" src="Product2.png"  >
             <h1 class="center" style="font-size: medium;" id="product2" >Bitcoin Token</h1>
             <a>$</a><span  id="price2" >199</span>
             <br>
@@ -165,7 +173,7 @@
     </td>
     <td>
         <div class="card" >
-            <img src="product3.png" alt="Denim Jeans" style="width:100%">
+            <img src="product3.png" class="image">
             <h1 class="center" style="font-size: medium;" id="product3">Recycled Straw </h1>
             <a>$</a><span  id="price3" >199</span>
             <br>

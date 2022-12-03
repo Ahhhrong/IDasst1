@@ -99,7 +99,6 @@ body{
   margin: auto;
   text-align: center;
   font-family: arial;
-  height: 500px;
   margin-left: 50px;
 }
 
@@ -109,7 +108,7 @@ body{
 }
 .image
 {
-  width:100%
+  width:80%
 }
 .card button {
   border: none;
@@ -121,7 +120,7 @@ body{
   cursor: pointer;
   width: 100%;
   font-size: 18px;
-  height: auto;
+  height: 50px;
 }
 
 .card button:hover {
@@ -133,9 +132,11 @@ body{
   bottom: 0;
   width: 100%;
   grid-area: footer;
-  position: fixed;
+  position: fix;
   }
 .footer1{
   margin-left: 45%;
-  
+  position: fix;
+  bottom: 0;
+
 }
