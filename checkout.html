@@ -26,33 +26,95 @@
     <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WVCBJFS"></script>
    
 </head>
-<header>
-    <div class="lin" style="background-color: black;">
-        <!-- <div class="topnav">
-            <a href="#home" class="active">Logo</a>
-            Navigation links (hidden by default)
-            <div id="myLinks">
-              <a href="#news">News</a>
-              <a href="/Html/Contact.html">Contact</a>
-              <a href="#about">About</a>
-            </div>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <!-- <a href="javascript:void(0);" class="icon" onclick="burger()">
-              <i class="fa fa-bars"></i>
-            </a>
-        </div> --> -->
-        <a href="index.html"><img src="logo.png"></a>
-        <br>
-        <div class="center" style="width: 28%;" >
+<header style="width: 100%;background-color: black;">
+  <div style="background-color: white;width: 100%;"  >        <a href="index.html" class="center"><img class="center" src="logo1.png"></a>
+  </div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+    }
+
+    .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    }
+
+    .topnav #myLinks {
+    display: none;
+    }
+
+    .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    }
+
+    .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+
+    .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+
+    .active {
+    background-color: black;
+    color: white;
+    }
+    </style>
+
+
+    <!-- Simulate a smartphone / tablet -->
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+    <a href="#home" class="active">Checkout</a>
+    <div id="myLinks">
         <a href="index.html">Home</a>
-
-        <a href="shopping.html">Shopping</a>
-        <a href="Contact.html">Contact</a>
-
-        <a href="https://apps.apple.com/us/app/jj-lin-app/id841502890">JJ Lin app</a>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        </div>
+        <a href="Shopping.html">Shopping</a>
+        <a href="contact.html">Contact</a>
+        <a href="album.html">Album</a>
     </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+    </div>
+
+    
+
+    <!-- End smartphone / tablet look -->
+    </div>
+
+    <script>
+    function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+    }
+    </script>
+
+
 </header>
 <body >
     <!-- <div class="center">
@@ -262,8 +324,9 @@
                 <label>
                   <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
                 </label>
+                <input type="submit" value="Continue to checkout" class="btn" onclick="checkout1()">
+
               </form>
-              <input type="submit" value="Continue to checkout" class="btn" onclick="checkout1()">
 
             </div>
           </div>
@@ -300,7 +363,7 @@
                 }
               </script>
               <h4>Cart <span style="margin-left: 150px;">Quantity</span><span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b></b></span></h4>
-              <p><a href="#" id ="product1" ></a><span style="margin-left: 57px;" id="quantity1" ></span> <span class="price" id ="price1"></span></p>
+              <p><a href="#" id ="product1" ></a><span style="margin-left: 117px;" id="quantity1" ></span> <span class="price" id ="price1"></span></p>
               <p><a href="#" id ="product2" ></a><span style="margin-left: 139px;"id="quantity2" ></span> <span class="price" id ="price2"></span></p>
               <p><a href="#" id ="product3" ></a><span style="margin-left: 118px;" id="quantity3" ></span> <span class="price" id ="price3"></span></p>
               <hr>

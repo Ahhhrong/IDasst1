@@ -105,14 +105,16 @@ function checkout1()
     if (a6.length ==0||a7.length ==0||a8.length ==0||a9.length ==0||a10.length ==0||a11.length ==0)
     {
         alert( "Fill in Billing Address Details");
+        return false;
 
     }
     else if (a1.length ==0||a2.length ==0||a3.length ==0||a4.length ==0||a5.length ==0)
     {
         alert( "Fill in payment Details");
 
-
+        return false;
     }
+    else{return true;}  
     
 
    
