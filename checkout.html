@@ -344,7 +344,10 @@
                 document.getElementById("quantity1").innerHTML=localStorage.getItem("quantity1")
                 document.getElementById("quantity2").innerHTML=localStorage.getItem("quantity2")
                 document.getElementById("quantity3").innerHTML=localStorage.getItem("quantity3")
-
+                if(localStorage.length==0)
+                {
+                  alert("Cart Empty")
+                }
                 var d = 0
                 if (a !=null)
                 {
@@ -363,9 +366,9 @@
                 }
               </script>
               <h4>Cart <span style="margin-left: 150px;">Quantity</span><span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b></b></span></h4>
-              <p><a href="#" id ="product1" ></a><span style="margin-left: 117px;" id="quantity1" ></span> <span class="price" id ="price1"></span></p>
-              <p><a href="#" id ="product2" ></a><span style="margin-left: 139px;"id="quantity2" ></span> <span class="price" id ="price2"></span></p>
-              <p><a href="#" id ="product3" ></a><span style="margin-left: 118px;" id="quantity3" ></span> <span class="price" id ="price3"></span></p>
+              <p><a  id ="product1" ></a><span style="margin-left: 117px;" id="quantity1" ></span> <span class="price" id ="price1"></span></p>
+              <p><a  id ="product2" ></a><span style="margin-left: 139px;"id="quantity2" ></span> <span class="price" id ="price2"></span></p>
+              <p><a  id ="product3" ></a><span style="margin-left: 118px;" id="quantity3" ></span> <span class="price" id ="price3"></span></p>
               <hr>
               <p>Total <span class="price" style="color:black" id="ttotal" ><b></b></span></p>
             </div>
