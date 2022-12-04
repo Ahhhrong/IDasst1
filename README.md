@@ -78,7 +78,7 @@ If this section grows too long, you may want to split it off into a separate fil
 ## Credits
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- The text for Index Page was copied from the [[Wikipedia article Z](https://en.wikipedia.org/wiki/Z)](https://en.wikipedia.org/wiki/JJ_Lin)
 
 ### Media
 - The photos used in this site were obtained from [Google](https://www.google.com/search?q=jj+lin&rlz=1C1ONGR_enSG967SG967&sxsrf=ALiCzsZ2izzHUB_WZ_qblAuHyT2ytsNTBQ:1670148897288&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj4tvq93d_7AhUxArcAHafKBaEQ_AUoAnoECAIQBA&biw=1536&bih=746&dpr=1.25)
