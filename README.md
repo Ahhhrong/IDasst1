@@ -12,7 +12,8 @@ My Design Process is creating a Merchant Website allows users to purchase mercha
 - as a user i want to ask a querie i will go to contact form to submit a form.
 
 
-
+[WireFrame Mobile Version](https://xd.adobe.com/view/1667a28f-db17-4060-9ffe-367c7513cabf-4334/)
+[WireFrame Web Version](https://xd.adobe.com/view/12c8ec13-65d9-4982-ac05-e0844f514a9e-479b/)
 <!-- This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. 
 These files should themselves either be included as a pdf file in the project itself (in an separate directory)
 Include the Adobe XD wireframe as a folder. You can include the XD share url.  -->
