@@ -180,12 +180,7 @@
           padding: 0 16px;
         }
         
-        .container {
-          background-color: #f2f2f2;
-          padding: 5px 20px 15px 20px;
-          border: 1px solid lightgrey;
-          border-radius: 3px;
-        }
+        
         
         input[type=text] {
           width: 100%;
@@ -267,28 +262,28 @@
      <div class="row">
           <div class="col-75">
             <div class="container">
-              <form >
+              <form action="checkout1.html">
               
                 <div class="row">
                   <div class="col-50">
                     <h3>Billing Address</h3>
                     <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                    <input type="text" id="fname" name="name" placeholder="John M. Doe" required>
                     <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                    <input type="text" id="femail" name="email" placeholder="john@example.com">
+                    <input type="text" id="femail" name="email" placeholder="john@example.com"required>
                     <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-                    <input type="text" id="faddress" name="address" placeholder="542 W. 15th Street">
+                    <input type="text" id="faddress" name="address" placeholder="542 W. 15th Street"required>
                     <label for="city"><i class="fa fa-institution"></i> City</label>
                     <input type="text" id="fcity" name="city" placeholder="New York">
         
                     <div class="row">
                       <div class="col-50">
                         <label for="state">State</label>
-                        <input type="text" id="fstate" name="state" placeholder="NY">
+                        <input type="text" id="fstate" name="state" placeholder="NY"required>
                       </div>
                       <div class="col-50">
                         <label for="zip">Zip</label>
-                        <input type="text" id="fzip" name="zip" placeholder="10001">
+                        <input type="text" id="fzip" name="zip" placeholder="10001"required>
                       </div>
                     </div>
                   </div>
@@ -303,19 +298,19 @@
                       <i class="fa fa-cc-discover" style="color:orange;"></i>
                     </div>
                     <label for="cname">Name on Card</label>
-                    <input type="text" id="fcname" name="cardname" placeholder="John More Doe">
+                    <input type="text" id="fcname" name="cname" placeholder="John More Doe" required/>
                     <label for="ccnum">Credit card number</label>
-                    <input type="text" id="fcard" name="cardnumber" placeholder="1111-2222-3333-4444">
+                    <input type="text" id="fcard" name="cnumber" placeholder="1111-2222-3333-4444" required>
                     <label for="expmonth">Exp Month</label>
-                    <input type="text" id="fmonth" name="expmonth" placeholder="September">
+                    <input type="text" id="fmonth" name="cmonth" placeholder="September">
                     <div class="row">
                       <div class="col-50">
                         <label for="expyear">Exp Year</label>
-                        <input type="text" id="fyear" name="expyear" placeholder="2018">
+                        <input type="text" id="fyear" name="cyear" placeholder="2018" required>
                       </div>
                       <div class="col-50">
                         <label for="cvv">CVV</label>
-                        <input type="text" id="fcvv" name="cvv" placeholder="352">
+                        <input type="text" id="fcvv" name="cvv" placeholder="352" required >
                       </div>
                     </div>
                   </div>
@@ -333,6 +328,7 @@
           <div class="col-25">
             <div class="container">
               <script type="text/javascript">
+                
                 window.onload=function(){what()}
                 function what(){
                 document.getElementById("product1").innerHTML=localStorage.getItem("product1")
@@ -341,9 +337,21 @@
                 var b =document.getElementById("price2").innerHTML=localStorage.getItem("price2")
                 document.getElementById("product3").innerHTML=localStorage.getItem("product3")
                 var c = document.getElementById("price3").innerHTML=(localStorage.getItem("price3"))
-                document.getElementById("quantity1").innerHTML=localStorage.getItem("quantity1")
-                document.getElementById("quantity2").innerHTML=localStorage.getItem("quantity2")
-                document.getElementById("quantity3").innerHTML=localStorage.getItem("quantity3")
+                var quantity1 = document.getElementById("quantity1").innerHTML=localStorage.getItem("quantity1")
+                var quantity2 =document.getElementById("quantity2").innerHTML=localStorage.getItem("quantity2")
+                var quantity3 =document.getElementById("quantity3").innerHTML=localStorage.getItem("quantity3")
+                if(localStorage.getItem("product1")!=null)
+                {
+                  document.getElementById("delete1").innerHTML = "Delete"
+                }
+                if(localStorage.getItem("product2")!=null)
+                {
+                  document.getElementById("delete2").innerHTML = "Delete"
+                }
+                if(localStorage.getItem("product3")!=null)
+                {
+                  document.getElementById("delete3").innerHTML = "Delete"
+                }
                 if(localStorage.length==0)
                 {
                   alert("Cart Empty")
@@ -351,24 +359,41 @@
                 var d = 0
                 if (a !=null)
                 {
-                  d+=parseInt(a)
+                  d+=parseInt(a *quantity1)
                 }
                 if (b !=null)
                 {
-                  d+=parseInt(b)
+                  d+=parseInt(b *quantity2)
                 }
                 if (c !=null)
                 {
-                  d+= parseInt(c)
+                  d+= parseInt(c*quantity3)
                 }
                 document.getElementById("ttotal").innerHTML=d
                 
                 }
+                
+                function delete1(){
+                  localStorage.removeItem("product1")
+                  localStorage.removeItem("price1")
+                  localStorage.removeItem("quantity1")
+                }
+                function delete2(){
+                  localStorage.removeItem("product2")
+                  localStorage.removeItem("price2")
+                  localStorage.removeItem("quantity2")
+                }
+                function delete3(){
+                  localStorage.removeItem("product3")
+                  localStorage.removeItem("price3")
+                  localStorage.removeItem("quantity3")
+                }
+
               </script>
               <h4>Cart <span style="margin-left: 150px;">Quantity</span><span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b></b></span></h4>
-              <p><a  id ="product1" ></a><span style="margin-left: 117px;" id="quantity1" ></span> <span class="price" id ="price1"></span></p>
-              <p><a  id ="product2" ></a><span style="margin-left: 139px;"id="quantity2" ></span> <span class="price" id ="price2"></span></p>
-              <p><a  id ="product3" ></a><span style="margin-left: 118px;" id="quantity3" ></span> <span class="price" id ="price3"></span></p>
+              <p><span  id ="product1" ></span><span style="margin-left: 117px;" id="quantity1" ></span> <span class="price" id ="price1"></span><a href="checkout.html"><span id="delete1" onclick="delete1()"></span></a></p>
+              <p><span  id ="product2" ></span><span style="margin-left: 139px;"id="quantity2" ></span> <span class="price" id ="price2"></span><a href="checkout.html"><span id="delete2" onclick="delete2()"></span></a></p>
+              <p><span  id ="product3" ></span><span style="margin-left: 118px;" id="quantity3" ></span> <span class="price" id ="price3"></span><a href="checkout.html"><span id="delete3" onclick="delete3()"></span></a></p>
               <hr>
               <p>Total <span class="price" style="color:black" id="ttotal" ><b></b></span></p>
             </div>
